@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="Edson IA Logo"
                 className="w-8 h-8"
               />
-              <span className="font-bold text-lg">IA BtewAy</span>
+              <span className="font-bold text-lg">IA BTELWAY</span>
             </div>
             <p className="text-white/70 text-sm">
               Infraestrutura de IA privada para empresas que não podem terceirizar segurança.
@@ -95,7 +95,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between text-sm text-white/70">
-          <p>&copy; {currentYear} IA BtewAy. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} IA BTELWAY. Todos os direitos reservados.</p>
           <p>
             Desenvolvido com ❤️ para empresas que valorizam privacidade e inovação.
           </p>
