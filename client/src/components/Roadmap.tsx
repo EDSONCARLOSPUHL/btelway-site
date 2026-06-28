@@ -33,7 +33,7 @@ const phases = [
     color: "from-cyan-500 to-emerald-500",
     completed: [],
     pending: [
-      "Adquirir GMKtec EVO-X2 128GB",
+      "Adquirir GMKtec AI",
       "Migrar inferência para GPU/ROCm",
       "Instalar MikroTik CCR1072",
       "HTTPS no Open WebUI (Let's Encrypt)",

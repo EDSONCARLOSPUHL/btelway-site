@@ -42,7 +42,7 @@ export default function Architecture() {
             </p>
             <div className="space-y-2 text-sm">
               <p className="text-foreground/60">
-                <span className="font-semibold text-foreground">Hardware:</span> Dell R530
+                <span className="font-semibold text-foreground">Hardware:</span> Dell AI
               </p>
               <p className="text-foreground/60">
                 <span className="font-semibold text-foreground">OS:</span> Ubuntu 24.04 LTS
@@ -66,13 +66,13 @@ export default function Architecture() {
             </p>
             <div className="space-y-2 text-sm">
               <p className="text-foreground/60">
-                <span className="font-semibold text-foreground">Principal:</span> GMKtec EVO-X2 128GB
+                <span className="font-semibold text-foreground">Principal:</span> GMKtec AI
               </p>
               <p className="text-foreground/60">
                 <span className="font-semibold text-foreground">Modelos:</span> Llama 70B, Qwen, DeepSeek-R1
               </p>
               <p className="text-foreground/60">
-                <span className="font-semibold text-foreground">Futuro:</span> NVIDIA DGX Spark (256GB)
+                <span className="font-semibold text-foreground">Futuro:</span> NVIDIA AI
               </p>
             </div>
           </Card>

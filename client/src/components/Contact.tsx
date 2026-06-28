@@ -72,10 +72,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
                   <a
-                    href="mailto:contato@edson-ia.com.br"
+                    href="mailto:contato@aibtelway.com.br"
                     className="text-foreground/70 hover:text-accent transition-colors"
                   >
-                    contato@edson-ia.com.br
+                    contato@aibtelway.com.br
                   </a>
                 </div>
               </div>

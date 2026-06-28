@@ -23,7 +23,7 @@ export default function Header() {
             className="w-8 h-8 transition-transform group-hover:scale-110"
           />
           <span className="font-bold text-lg text-primary hidden sm:inline">
-            Edson IA
+            AI Btelway
           </span>
         </a>
 
