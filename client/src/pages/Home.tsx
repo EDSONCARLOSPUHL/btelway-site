@@ -44,7 +44,7 @@ export default function Home() {
         </section>
 
         {/* 3 Pilares */}
-        <section className="py-20 px-4">
+        <section id="services" className="py-20 px-4">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
               Por Que IA BtelWay?
@@ -126,7 +126,7 @@ export default function Home() {
         </section>
 
         {/* Como Funciona */}
-        <section className="py-20 px-4 bg-accent/5 border-y border-border">
+        <section id="architecture" className="py-20 px-4 bg-accent/5 border-y border-border">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
               Como Funciona
@@ -166,7 +166,7 @@ export default function Home() {
         </section>
 
         {/* Casos de Uso */}
-        <section className="py-20 px-4">
+        <section id="roadmap" className="py-20 px-4">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
               Indústrias que Confiam em Nós
@@ -182,7 +182,7 @@ export default function Home() {
         </section>
 
         {/* CTA Final */}
-        <section className="py-20 px-4 border-t border-border">
+        <section id="contact" className="py-20 px-4 border-t border-border">
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-6 text-foreground">
               Pronto para Transformar Sua Operação?
