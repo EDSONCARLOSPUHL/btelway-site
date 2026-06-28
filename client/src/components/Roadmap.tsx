@@ -49,7 +49,7 @@ const phases = [
     color: "from-emerald-500 to-amber-500",
     completed: [],
     pending: [
-      "Ligar parque de servidores (R610, G7)",
+      "Ligar parque de servidores (DELL)",
       "Alta disponibilidade (HA)",
       "Segundo nó de IA (Spark) ou par",
       "Monitoramento central (Zabbix)",

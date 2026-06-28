@@ -42,10 +42,10 @@ export default function Architecture() {
             </p>
             <div className="space-y-2 text-sm">
               <p className="text-foreground/60">
-                <span className="font-semibold text-foreground">Hardware:</span> Dell AI
+                <span className="font-semibold text-foreground">Hardware:</span> Dell IA
               </p>
               <p className="text-foreground/60">
-                <span className="font-semibold text-foreground">OS:</span> Ubuntu 24.04 LTS
+                <span className="font-semibold text-foreground">OS:</span> Ubuntu Server
               </p>
               <p className="text-foreground/60">
                 <span className="font-semibold text-foreground">Serviços:</span> Ollama, Open WebUI, Qdrant, n8n
@@ -69,7 +69,7 @@ export default function Architecture() {
                 <span className="font-semibold text-foreground">Principal:</span> GMKtec AI
               </p>
               <p className="text-foreground/60">
-                <span className="font-semibold text-foreground">Modelos:</span> Llama 70B, Qwen, DeepSeek-R1
+                <span className="font-semibold text-foreground">Modelos:</span> Llama, Qwen, DeepSeek
               </p>
               <p className="text-foreground/60">
                 <span className="font-semibold text-foreground">Futuro:</span> NVIDIA AI

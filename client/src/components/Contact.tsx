@@ -72,10 +72,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
                   <a
-                    href="mailto:contato@aibtelway.com.br"
+                    href="mailto:edsonpuhl@gmail.com"
                     className="text-foreground/70 hover:text-accent transition-colors"
                   >
-                    contato@aibtelway.com.br
+                    edsonpuhl@gmail.com
                   </a>
                 </div>
               </div>
@@ -87,10 +87,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Telefone</h4>
                   <a
-                    href="tel:+5549999999999"
+                    href="tel:+5554999632518"
                     className="text-foreground/70 hover:text-accent transition-colors"
                   >
-                    +55 (49) 9 9999-9999
+                    +55 (54) 9 9603-2518
                   </a>
                 </div>
               </div>
