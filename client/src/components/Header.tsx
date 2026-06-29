@@ -30,11 +30,11 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/solucoes" className="text-foreground/70 hover:text-foreground transition-colors">Soluções</Link>
-          <Link href="/casos-de-uso" className="text-foreground/70 hover:text-foreground transition-colors">Casos de Uso</Link>
-          <Link href="/seguranca" className="text-foreground/70 hover:text-foreground transition-colors">Segurança</Link>
-          <Link href="/precos" className="text-foreground/70 hover:text-foreground transition-colors">Preços</Link>
-          <Link href="/blog" className="text-foreground/70 hover:text-foreground transition-colors">Blog</Link>
+          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Soluções</a>
+          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Casos de Uso</a>
+          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Segurança</a>
+          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Preços</a>
+          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Blog</a>
           {navItems.map((item) => (
             <a
               key={item.label}
