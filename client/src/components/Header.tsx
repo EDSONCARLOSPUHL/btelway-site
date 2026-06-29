@@ -29,7 +29,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <img
-            src="/manus-storage/btelway-logo_c0751b4d.png"
+            src="/btelway-logo.png"
             alt="BTELway Logo"
             className="h-11 w-auto transition-transform group-hover:scale-105"
           />

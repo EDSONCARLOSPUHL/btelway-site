@@ -22,7 +22,7 @@ export default function Home() {
           {/* Hero Background Image */}
           <div className="absolute inset-0 opacity-30 pointer-events-none">
             <img 
-              src="/manus-storage/hero-bg-datacenter_863969f0.png" 
+              src="/hero-bg-datacenter.png" 
               alt="Datacenter Background" 
               className="w-full h-full object-cover"
             />

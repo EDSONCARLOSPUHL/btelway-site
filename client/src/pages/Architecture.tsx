@@ -28,7 +28,7 @@ export default function Architecture() {
             </h2>
             <Card className="p-8 border border-border bg-accent/5">
               <img 
-                src="/manus-storage/architecture-diagram_85f4d41a.png" 
+                src="/architecture-diagram.png" 
                 alt="Arquitetura Técnica IA BTELWAY" 
                 className="w-full rounded-lg"
               />

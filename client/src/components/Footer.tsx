@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img
-                src="/manus-storage/btelway-logo_c0751b4d.png"
+                src="/btelway-logo.png"
                 alt="BTELway Logo"
                 className="h-10 w-auto bg-white rounded-md p-1"
               />
