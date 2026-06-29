@@ -8,7 +8,9 @@ export default function Header() {
   const [, navigate] = useLocation();
 
   const navItems = [
-    { label: "Soluções", href: "/solucoes" },
+    { label: "Serviços", href: "/servicos" },
+    { label: "Arquitetura", href: "/arquitetura" },
+    { label: "Roadmap", href: "/roadmap" },
     { label: "Casos de Uso", href: "/casos-de-uso" },
     { label: "Segurança", href: "/seguranca" },
     { label: "Preços", href: "/precos" },
