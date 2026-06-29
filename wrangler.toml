@@ -1,0 +1,7 @@
+name = "bold-glade-4212"
+compatibility_date = "2026-06-29"
+
+# Serve o site estático (SPA) gerado pelo Vite em dist/public
+[assets]
+directory = "./dist/public"
+not_found_handling = "single-page-application"
