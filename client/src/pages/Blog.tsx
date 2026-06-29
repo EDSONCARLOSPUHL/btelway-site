@@ -58,7 +58,7 @@ export default function Blog() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">
           <div className="container">

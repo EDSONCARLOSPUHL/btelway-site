@@ -1,31 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const [, navigate] = useLocation();
 
   const navItems = [
-    { label: "Serviços", href: "#services" },
-    { label: "Arquitetura", href: "#architecture" },
-    { label: "Roadmap", href: "#roadmap" },
-    { label: "Contato", href: "#contact" },
+    { label: "Soluções", href: "/solucoes" },
+    { label: "Casos de Uso", href: "/casos-de-uso" },
+    { label: "Segurança", href: "/seguranca" },
+    { label: "Preços", href: "/precos" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contato", href: "/contato" },
   ];
+
+  const goToDemo = () => {
+    setMobileMenuOpen(false);
+    navigate("/contato");
+  };
 
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2 group">
           <img
             src="/manus-storage/logo-btelway_260ef5b2.png"
             alt="IA BTELWAY Logo"
@@ -34,24 +34,18 @@ export default function Header() {
           <span className="font-bold text-lg text-primary hidden sm:inline">
             IA BTELWAY
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Soluções</a>
-          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Casos de Uso</a>
-          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Segurança</a>
-          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Preços</a>
-          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Blog</a>
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
-              onClick={(e) => handleScroll(e, item.href.substring(1))}
-              className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+              className="text-sm font-medium text-foreground/70 hover:text-accent transition-colors"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -59,10 +53,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Button
             className="bg-destructive hover:bg-destructive/90 text-white rounded-full px-6"
-            onClick={() => {
-              const contactSection = document.getElementById("contact");
-              contactSection?.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={goToDemo}
           >
             Solicitar Demo
           </Button>
@@ -72,6 +63,7 @@ export default function Header() {
         <button
           className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Abrir menu"
         >
           {mobileMenuOpen ? (
             <X className="w-5 h-5" />
@@ -86,22 +78,18 @@ export default function Header() {
         <div className="md:hidden border-t border-border bg-white">
           <nav className="container py-4 flex flex-col gap-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className="text-sm font-medium text-foreground hover:text-accent transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button
               className="bg-destructive hover:bg-destructive/90 text-white rounded-full w-full mt-2"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                const contactSection = document.getElementById("contact");
-                contactSection?.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={goToDemo}
             >
               Solicitar Demo
             </Button>

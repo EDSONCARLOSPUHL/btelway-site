@@ -28,27 +28,23 @@ export default function Home() {
                 Privacidade total. Controle completo. Sem surpresas de custo. Infraestrutura de IA local para empresas que não podem terceirizar segurança.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-accent hover:bg-accent/90 flex items-center gap-2"
-                  onClick={() => {
-                    const contactSection = document.getElementById('contact');
-                    contactSection?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Agendar Demo <ArrowRight className="w-4 h-4" />
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-foreground/20 hover:bg-foreground/5"
-                  onClick={() => {
-                    const servicesSection = document.getElementById('services');
-                    servicesSection?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Explorar Solucoes
-                </Button>
+                <Link href="/contato">
+                  <Button 
+                    size="lg" 
+                    className="bg-accent hover:bg-accent/90 flex items-center gap-2 w-full sm:w-auto"
+                  >
+                    Agendar Demo <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link href="/solucoes">
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="border-foreground/20 hover:bg-foreground/5 w-full sm:w-auto"
+                  >
+                    Explorar Soluções
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -58,7 +54,7 @@ export default function Home() {
         <section id="services" className="py-20 px-4">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
-              Por Que IA BtelWay?
+              Por Que IA BTELWAY?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="p-8 border border-border hover:border-accent/50 transition-all">
@@ -201,16 +197,14 @@ export default function Home() {
             <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
               Comece com um teste gratuito de 14 dias. Sem cartão de crédito necessário.
             </p>
-            <Button 
-              size="lg" 
-              className="bg-accent hover:bg-accent/90"
-              onClick={() => {
-                const contactSection = document.getElementById('contact');
-                contactSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Agendar Demo Agora
-            </Button>
+            <Link href="/contato">
+              <Button 
+                size="lg" 
+                className="bg-accent hover:bg-accent/90"
+              >
+                Agendar Demo Agora
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
