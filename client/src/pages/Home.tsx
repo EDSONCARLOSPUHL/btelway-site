@@ -28,16 +28,27 @@ export default function Home() {
                 Privacidade total. Controle completo. Sem surpresas de custo. Infraestrutura de IA local para empresas que não podem terceirizar segurança.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contato">
-                  <Button size="lg" className="bg-accent hover:bg-accent/90 flex items-center gap-2">
-                    Agendar Demo <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </Link>
-                <Link href="/solucoes">
-                  <Button size="lg" variant="outline" className="border-foreground/20 hover:bg-foreground/5">
-                    Explorar Soluções
-                  </Button>
-                </Link>
+                <Button 
+                  size="lg" 
+                  className="bg-accent hover:bg-accent/90 flex items-center gap-2"
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  Agendar Demo <ArrowRight className="w-4 h-4" />
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-foreground/20 hover:bg-foreground/5"
+                  onClick={() => {
+                    const servicesSection = document.getElementById('services');
+                    servicesSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  Explorar Solucoes
+                </Button>
               </div>
             </div>
           </div>
@@ -190,11 +201,16 @@ export default function Home() {
             <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
               Comece com um teste gratuito de 14 dias. Sem cartão de crédito necessário.
             </p>
-            <Link href="/contato">
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
-                Agendar Demo Agora
-              </Button>
-            </Link>
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90"
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Agendar Demo Agora
+            </Button>
           </div>
         </section>
       </main>

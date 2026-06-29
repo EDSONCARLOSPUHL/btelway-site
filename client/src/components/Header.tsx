@@ -6,6 +6,14 @@ import { Link } from "wouter";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navItems = [
     { label: "Serviços", href: "#services" },
     { label: "Arquitetura", href: "#architecture" },
@@ -30,15 +38,16 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Soluções</a>
-          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Casos de Uso</a>
-          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Segurança</a>
-          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Preços</a>
-          <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">Blog</a>
+          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Soluções</a>
+          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Casos de Uso</a>
+          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Segurança</a>
+          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Preços</a>
+          <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-foreground/70 hover:text-foreground transition-colors">Blog</a>
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
+              onClick={(e) => handleScroll(e, item.href.substring(1))}
               className="text-sm font-medium text-foreground hover:text-accent transition-colors"
             >
               {item.label}

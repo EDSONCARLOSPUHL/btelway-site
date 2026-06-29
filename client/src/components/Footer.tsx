@@ -3,6 +3,14 @@ import { Separator } from "@/components/ui/separator";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-primary text-white">
       <div className="container py-16">
@@ -28,17 +36,17 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#services" className="text-white/70 hover:text-white transition-colors">
+                <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-white/70 hover:text-white transition-colors">
                   Serviços
                 </a>
               </li>
               <li>
-                <a href="#architecture" className="text-white/70 hover:text-white transition-colors">
+                <a href="#architecture" onClick={(e) => handleScroll(e, 'architecture')} className="text-white/70 hover:text-white transition-colors">
                   Arquitetura
                 </a>
               </li>
               <li>
-                <a href="#roadmap" className="text-white/70 hover:text-white transition-colors">
+                <a href="#roadmap" onClick={(e) => handleScroll(e, 'roadmap')} className="text-white/70 hover:text-white transition-colors">
                   Roadmap
                 </a>
               </li>
@@ -50,7 +58,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Empresa</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#contact" className="text-white/70 hover:text-white transition-colors">
+                <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="text-white/70 hover:text-white transition-colors">
                   Contato
                 </a>
               </li>
