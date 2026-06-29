@@ -22,12 +22,12 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { label: "Serviços", href: "/servicos" },
+    { label: "Quem Somos", href: "/quem-somos" },
     { label: "Arquitetura", href: "/arquitetura" },
     { label: "Roadmap", href: "/roadmap" },
     { label: "Casos de Uso", href: "/casos-de-uso" },
     { label: "Segurança", href: "/seguranca" },
-    { label: "Preços", href: "/precos" },
+    { label: "Serviços", href: "/servicos" },
     { label: "Blog", href: "/blog" },
     { label: "Contato", href: "/contato" },
   ];

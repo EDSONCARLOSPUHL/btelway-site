@@ -17,11 +17,11 @@ export default function Footer() {
     { label: "Serviços", href: "/servicos" },
     { label: "Arquitetura", href: "/arquitetura" },
     { label: "Roadmap", href: "/roadmap" },
-    { label: "Preços", href: "/precos" },
+    { label: "Casos de Uso", href: "/casos-de-uso" },
   ];
 
   const empresa = [
-    { label: "Casos de Uso", href: "/casos-de-uso" },
+    { label: "Quem Somos", href: "/quem-somos" },
     { label: "Segurança", href: "/seguranca" },
     { label: "Blog", href: "/blog" },
     { label: "Contato", href: "/contato" },

@@ -1,9 +1,14 @@
+/**
+ * Services — IA BTELWAY
+ * Página unificada: Serviços + Preços. Mantém os 3 níveis de serviço, a tabela
+ * comparativa e os planos de assinatura num só lugar. Identidade verde BTELway.
+ */
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowRight, Network, Brain, Zap } from "lucide-react";
+import { CheckCircle2, ArrowRight, Network, Brain, Zap, Check } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -19,9 +24,7 @@ export default function Services() {
         "Suporte técnico especializado",
         "Relatórios de segurança mensais",
       ],
-      price: "A partir de R$ 1.500/mês",
       color: "from-cyan-500 to-blue-500",
-      cta: "Solicitar Orçamento",
     },
     {
       id: 2,
@@ -35,9 +38,7 @@ export default function Services() {
         "Interface web privada (acesso por VPN)",
         "Conformidade LGPD garantida",
       ],
-      price: "A partir de R$ 3.000/mês",
       color: "from-purple-500 to-pink-500",
-      cta: "Agendar Demo",
     },
     {
       id: 3,
@@ -51,9 +52,54 @@ export default function Services() {
         "Backup automático de dados e configurações",
         "Escalabilidade conforme sua demanda cresce",
       ],
-      price: "A partir de R$ 5.500/mês",
       color: "from-green-500 to-emerald-500",
-      cta: "Começar Agora",
+    },
+  ];
+
+  const plans = [
+    {
+      name: "Rede Gerenciada",
+      price: "Sob consulta",
+      period: "",
+      description: "Segurança de rede MikroTik para sua operação.",
+      features: [
+        "Firewall e VPN gerenciados",
+        "Gestão e monitoramento da rede",
+        "Suporte técnico especializado",
+        "Relatórios de segurança mensais",
+      ],
+      cta: "Solicitar Orçamento",
+      highlighted: false,
+    },
+    {
+      name: "IA Privada",
+      price: "Sob consulta",
+      period: "",
+      description: "Inteligência artificial rodando dentro da sua empresa.",
+      features: [
+        "Modelos de IA 100% locais",
+        "RAG sobre seus documentos",
+        "Interface privada por VPN",
+        "Conformidade LGPD nativa",
+        "Custo mensal fixo e previsível",
+      ],
+      cta: "Agendar Demonstração",
+      highlighted: true,
+    },
+    {
+      name: "Combo Gerenciado",
+      price: "Sob consulta",
+      period: "",
+      description: "Rede + IA privada + gestão completa.",
+      features: [
+        "Tudo da Rede Gerenciada + IA Privada",
+        "Suporte 24/7 dedicado",
+        "Monitoramento contínuo",
+        "Backup e disaster recovery",
+        "Escalabilidade sob demanda",
+      ],
+      cta: "Falar com Especialista",
+      highlighted: false,
     },
   ];
 
@@ -64,11 +110,15 @@ export default function Services() {
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">
           <div className="container">
+            <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+              Serviços & Planos
+            </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Nossos Serviços
+              Serviços e Investimento
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              Três níveis de solução para sua empresa: desde segurança de rede até IA privada completa.
+              Três níveis de solução — da segurança de rede à IA privada completa — com modelo de
+              custo fixo e previsível. Escolha o que faz sentido para sua empresa.
             </p>
           </div>
         </section>
@@ -76,39 +126,34 @@ export default function Services() {
         {/* Services Grid */}
         <section className="py-20 px-4">
           <div className="container">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">O que entregamos</h2>
+            <p className="text-foreground/60 mb-12 max-w-2xl">
+              Cada serviço é gerenciado de ponta a ponta pela nossa equipe — você foca no negócio,
+              nós cuidamos da infraestrutura.
+            </p>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((service) => {
                 const IconComponent = service.icon;
                 return (
                   <Card
                     key={service.id}
-                    className="p-8 border border-border hover:border-accent/50 transition-all flex flex-col"
+                    className="p-8 border border-border hover:border-green-500/50 hover:shadow-lg transition-all flex flex-col"
                   >
-                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center mb-6`}>
+                    <div
+                      className={`w-12 h-12 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center mb-6`}
+                    >
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 text-foreground">
-                      {service.title}
-                    </h3>
-                    <p className="text-foreground/70 mb-6">
-                      {service.description}
-                    </p>
+                    <h3 className="text-2xl font-bold mb-3 text-foreground">{service.title}</h3>
+                    <p className="text-foreground/70 mb-6">{service.description}</p>
                     <ul className="space-y-3 mb-8 flex-1">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                           <span className="text-foreground/80 text-sm">{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <div className="border-t border-border pt-6">
-                      <p className="text-accent font-bold mb-4">{service.price}</p>
-                      <Link href="/contato">
-                        <Button className="w-full bg-accent hover:bg-accent/90 flex items-center justify-center gap-2">
-                          {service.cta} <ArrowRight className="w-4 h-4" />
-                        </Button>
-                      </Link>
-                    </div>
                   </Card>
                 );
               })}
@@ -117,17 +162,17 @@ export default function Services() {
         </section>
 
         {/* Comparação Detalhada */}
-        <section className="py-20 px-4 bg-accent/5 border-y border-border">
+        <section className="py-20 px-4 bg-muted/40 border-y border-border">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
-              Comparação de Planos
+              Comparação de Recursos
             </h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm">
+              <table className="w-full text-sm bg-background rounded-xl overflow-hidden">
                 <thead>
-                  <tr className="border-b border-border">
+                  <tr className="border-b border-border bg-muted/50">
                     <th className="text-left py-4 px-4 font-bold text-foreground">Recurso</th>
-                    <th className="text-center py-4 px-4 font-bold text-foreground">MikroTik</th>
+                    <th className="text-center py-4 px-4 font-bold text-foreground">Rede</th>
                     <th className="text-center py-4 px-4 font-bold text-foreground">IA Privada</th>
                     <th className="text-center py-4 px-4 font-bold text-foreground">Combo</th>
                   </tr>
@@ -146,21 +191,21 @@ export default function Services() {
                       <td className="py-4 px-4 text-foreground">{row.feature}</td>
                       <td className="py-4 px-4 text-center">
                         {row.mikrotik ? (
-                          <CheckCircle2 className="w-5 h-5 text-accent mx-auto" />
+                          <CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" />
                         ) : (
                           <span className="text-foreground/30">—</span>
                         )}
                       </td>
                       <td className="py-4 px-4 text-center">
                         {row.ia ? (
-                          <CheckCircle2 className="w-5 h-5 text-accent mx-auto" />
+                          <CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" />
                         ) : (
                           <span className="text-foreground/30">—</span>
                         )}
                       </td>
                       <td className="py-4 px-4 text-center">
                         {row.combo ? (
-                          <CheckCircle2 className="w-5 h-5 text-accent mx-auto" />
+                          <CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" />
                         ) : (
                           <span className="text-foreground/30">—</span>
                         )}
@@ -173,18 +218,118 @@ export default function Services() {
           </div>
         </section>
 
+        {/* Planos / Preços */}
+        <section className="py-20 px-4">
+          <div className="container">
+            <div className="text-center mb-12">
+              <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+                Planos
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Investimento sob medida
+              </h2>
+              <p className="text-foreground/70 max-w-2xl mx-auto">
+                Cada empresa tem uma realidade. Por isso o valor é definido após um diagnóstico
+                gratuito da sua infraestrutura — sem taxas ocultas e com custo mensal previsível.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 items-stretch">
+              {plans.map((plan, idx) => (
+                <Card
+                  key={idx}
+                  className={`p-8 border flex flex-col transition-all ${
+                    plan.highlighted
+                      ? "border-green-500 shadow-xl shadow-green-500/10 md:-translate-y-2"
+                      : "border-border hover:border-green-500/50"
+                  }`}
+                >
+                  {plan.highlighted && (
+                    <div className="inline-block self-start px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full mb-4">
+                      MAIS PROCURADO
+                    </div>
+                  )}
+                  <h3 className="text-2xl font-bold text-foreground mb-2">{plan.name}</h3>
+                  <p className="text-foreground/60 text-sm mb-6">{plan.description}</p>
+                  <div className="mb-8">
+                    <span className="text-3xl font-bold text-foreground">{plan.price}</span>
+                    {plan.period && <span className="text-foreground/60">{plan.period}</span>}
+                  </div>
+                  <ul className="space-y-3 mb-8 flex-1">
+                    {plan.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-foreground/80 text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link href="/contato">
+                    <Button
+                      size="lg"
+                      className={`w-full ${
+                        plan.highlighted
+                          ? "bg-green-500 hover:bg-green-600 text-white"
+                          : "bg-foreground/10 hover:bg-foreground/20 text-foreground"
+                      }`}
+                    >
+                      {plan.cta}
+                    </Button>
+                  </Link>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="py-20 px-4 bg-muted/40 border-y border-border">
+          <div className="container">
+            <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
+              Perguntas Frequentes
+            </h2>
+            <div className="max-w-2xl mx-auto space-y-6">
+              <Card className="p-6 border border-border">
+                <h3 className="font-bold text-foreground mb-2">Como é definido o valor?</h3>
+                <p className="text-foreground/70 text-sm">
+                  Fazemos um diagnóstico gratuito da sua infraestrutura e necessidades. A partir
+                  disso, montamos uma proposta com custo mensal fixo, sem cobrança por uso.
+                </p>
+              </Card>
+              <Card className="p-6 border border-border">
+                <h3 className="font-bold text-foreground mb-2">
+                  Meus dados saem da minha empresa?
+                </h3>
+                <p className="text-foreground/70 text-sm">
+                  Não. Na IA Privada, os modelos rodam localmente na infraestrutura dedicada. Dados
+                  sensíveis nunca são enviados para servidores de terceiros.
+                </p>
+              </Card>
+              <Card className="p-6 border border-border">
+                <h3 className="font-bold text-foreground mb-2">Posso começar só com a rede?</h3>
+                <p className="text-foreground/70 text-sm">
+                  Sim. Você pode iniciar pela Rede Gerenciada e evoluir para a IA Privada ou o Combo
+                  quando fizer sentido para o seu negócio.
+                </p>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Final */}
-        <section className="py-20 px-4 border-t border-border">
+        <section className="py-20 px-4">
           <div className="container text-center">
             <h2 className="text-4xl font-bold mb-6 text-foreground">
-              Qual é o melhor plano para você?
+              Qual é a melhor solução para você?
             </h2>
             <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-              Fale com nosso time. Vamos entender sua infraestrutura e recomendar a melhor solução.
+              Fale com nosso time. Vamos entender sua infraestrutura e recomendar o caminho ideal —
+              com diagnóstico gratuito.
             </p>
             <Link href="/contato">
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
-                Agendar Consulta Gratuita
+              <Button
+                size="lg"
+                className="bg-green-500 hover:bg-green-600 text-white flex items-center gap-2 mx-auto"
+              >
+                Agendar Diagnóstico Gratuito <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>
