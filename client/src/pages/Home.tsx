@@ -1,202 +1,271 @@
+/**
+ * HOME — IA BTELWAY
+ * Design philosophy: estrutura de alta conversão (inspirada na arquitetura da Redrive),
+ * adaptada à identidade BTELway (verde esmeralda + cyan, fundo claro com seções dark pontuais).
+ * Fluxo: Hero imersivo -> Agitação do problema -> Métricas -> Narrativa da solução
+ *        -> Método em fases -> Comparação 2 caminhos -> Qualificador -> CTA final.
+ * Sem depoimentos/logos fictícios (content policy). Provas reais: LGPD, tecnologias, princípios.
+ */
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Lock, Zap, TrendingUp, CheckCircle2, ArrowRight, Shield, Database, Network } from "lucide-react";
+import {
+  Lock,
+  Zap,
+  TrendingUp,
+  CheckCircle2,
+  XCircle,
+  ArrowRight,
+  Shield,
+  Database,
+  Network,
+  Cloud,
+  Server,
+  AlertTriangle,
+  Cpu,
+  Building2,
+  Stethoscope,
+  ShoppingCart,
+  Factory,
+} from "lucide-react";
+
+const WHATSAPP_URL =
+  "https://wa.me/5554933806130?text=" +
+  encodeURIComponent("Olá! Quero um diagnóstico de IA privada para minha empresa.");
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
       <main className="flex-1">
-        {/* Hero Section — Premium Dark Futuristic */}
-        <section className="relative py-32 px-4 border-b border-border overflow-hidden">
-          {/* Background gradient + glow effects */}
-          <div className="absolute inset-0 opacity-40 pointer-events-none">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-green-500 to-cyan-500 rounded-full blur-3xl opacity-20" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-purple-500 to-green-500 rounded-full blur-3xl opacity-20" />
-            <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-br from-cyan-500 to-purple-500 rounded-full blur-3xl opacity-10 transform -translate-x-1/2 -translate-y-1/2" />
-          </div>
-
-          {/* Hero Background Image */}
-          <div className="absolute inset-0 opacity-30 pointer-events-none">
-            <img 
-              src="/hero-bg-datacenter.webp" 
-              alt="Datacenter Background" 
+        {/* ========================= HERO ========================= */}
+        <section className="relative px-4 pt-28 pb-24 md:pt-36 md:pb-32 overflow-hidden">
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img
+              src="/hero-bg-datacenter.webp"
+              alt="Datacenter de IA privada"
               className="w-full h-full object-cover"
             />
+            {/* Dark gradient overlay for text contrast (low-key image -> light text) */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#04140c]/95 via-[#04140c]/80 to-[#04140c]/40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#04140c] via-transparent to-transparent" />
           </div>
 
           <div className="container relative z-10">
             <div className="max-w-3xl">
-              {/* Badge */}
-              <div className="inline-block px-4 py-2 bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-500/30 rounded-full mb-6 backdrop-blur-sm">
-                <span className="text-green-400 text-sm font-semibold">IA PRIVADA PARA EMPRESAS</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/15 border border-green-400/30 rounded-full mb-8 backdrop-blur-sm">
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse-soft" />
+                <span className="text-green-300 text-sm font-semibold tracking-wide">
+                  INFRAESTRUTURA DE IA PRIVADA
+                </span>
               </div>
 
-              {/* Headline */}
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight bg-gradient-to-r from-foreground via-green-400 to-cyan-400 bg-clip-text text-transparent">
-                IA que Fica em Casa
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-[1.05]">
+                Sua IA.{" "}
+                <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
+                  Seus dados.
+                </span>{" "}
+                Seu controle.
               </h1>
 
-              {/* Subheadline */}
-              <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl leading-relaxed">
-                Privacidade total. Controle completo. Sem surpresas de custo. Infraestrutura de IA local para empresas que não podem terceirizar segurança.
+              <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl leading-relaxed">
+                Pare de enviar informações confidenciais da sua empresa para servidores de
+                terceiros. Tenha o poder da inteligência artificial rodando dentro da sua própria
+                infraestrutura — com custo fixo e conformidade total com a LGPD.
               </p>
 
-              {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contato">
-                  <Button 
-                    size="lg" 
-                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white flex items-center gap-2 w-full sm:w-auto shadow-lg shadow-green-500/30"
+                  <Button
+                    size="lg"
+                    className="bg-green-500 hover:bg-green-600 text-white font-semibold flex items-center gap-2 w-full sm:w-auto shadow-xl shadow-green-500/30 text-base h-13 px-8"
                   >
-                    Agendar Demo <ArrowRight className="w-4 h-4" />
+                    Quero meu diagnóstico gratuito <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
-                <Link href="/servicos">
-                  <Button 
-                    size="lg" 
-                    variant="outline" 
-                    className="border-green-500/50 hover:bg-green-500/10 hover:border-green-400 w-full sm:w-auto"
+                <Link href="/arquitetura">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-white/30 bg-white/5 text-white hover:bg-white/15 hover:border-white/50 w-full sm:w-auto text-base h-13 px-8 backdrop-blur-sm"
                   >
-                    Explorar Serviços
+                    Ver como funciona
                   </Button>
                 </Link>
+              </div>
+
+              <p className="text-white/60 text-sm mt-8 flex items-center gap-2">
+                <Shield className="w-4 h-4 text-green-400" />
+                Para empresas que não podem terceirizar a segurança dos seus dados.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================= AGITAÇÃO DO PROBLEMA ========================= */}
+        <section className="py-20 md:py-28 px-4 bg-[#04140c] text-white relative">
+          <div className="container">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                Seus dados estão saindo pela porta.{" "}
+                <span className="text-green-400">E você nem percebe.</span>
+              </h2>
+              <p className="text-white/70 text-lg leading-relaxed">
+                Toda vez que sua equipe usa uma IA pública, documentos, contratos e dados de
+                clientes são enviados para servidores que você não controla. Isso não é só um risco
+                técnico — é um risco jurídico e financeiro.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: Cloud,
+                  title: "Dados em servidores alheios",
+                  desc: "Informações sensíveis trafegam por nuvens estrangeiras, fora do seu controle e da LGPD.",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "Custo que só cresce",
+                  desc: "Cobrança por token transforma seu orçamento de IA numa conta imprevisível todo mês.",
+                },
+                {
+                  icon: Lock,
+                  title: "Dependência total",
+                  desc: "Mudou o preço, a política ou o modelo? Você fica refém das decisões da Big Tech.",
+                },
+                {
+                  icon: AlertTriangle,
+                  title: "Exposição jurídica",
+                  desc: "Vazamento de dado sensível pode gerar multa de até 2% do faturamento sob a LGPD.",
+                },
+              ].map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.title}
+                    className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-green-400/30 hover:bg-white/[0.06] transition-all"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-green-500/10 border border-green-400/20 flex items-center justify-center mb-5">
+                      <Icon className="w-6 h-6 text-green-400" />
+                    </div>
+                    <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                    <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                );
+              })}
+            </div>
+
+            <p className="text-center text-white/50 mt-12 text-lg">
+              Não é falta de tecnologia. É falta de{" "}
+              <span className="text-white font-semibold">infraestrutura própria.</span>
+            </p>
+          </div>
+        </section>
+
+        {/* ========================= MÉTRICAS / PROVA DE VALOR ========================= */}
+        <section className="px-4 -mt-px">
+          <div className="container">
+            <div className="max-w-6xl mx-auto -translate-y-12">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                {[
+                  { value: "100%", label: "Processamento local" },
+                  { value: "Zero", label: "Dados em terceiros" },
+                  { value: "LGPD", label: "Conformidade nativa" },
+                  { value: "Fixo", label: "Custo mensal previsível" },
+                ].map((stat) => (
+                  <Card
+                    key={stat.label}
+                    className="p-6 text-center border border-green-500/20 bg-white shadow-xl shadow-green-900/5"
+                  >
+                    <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent mb-1">
+                      {stat.value}
+                    </p>
+                    <p className="text-foreground/60 text-sm">{stat.label}</p>
+                  </Card>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* 3 Pilares — Premium Cards with Glow */}
-        <section id="services" className="py-20 px-4">
+        {/* ========================= NARRATIVA DA SOLUÇÃO ========================= */}
+        <section className="py-12 md:py-20 px-4">
           <div className="container">
-            <h2 className="text-4xl font-bold mb-4 text-foreground text-center">
-              Por Que IA BTELWAY?
-            </h2>
-            <p className="text-foreground/70 text-center mb-12 max-w-2xl mx-auto">
-              Três pilares que definem nossa solução: segurança, autonomia e previsibilidade.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Card 1: Privacidade */}
-              <Card className="p-8 border border-green-500/30 hover:border-green-400/50 transition-all bg-gradient-to-br from-background to-green-500/5 hover:shadow-lg hover:shadow-green-500/20">
-                <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center mb-6 shadow-lg shadow-green-500/30">
-                  <Lock className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Privacidade Total</h3>
-                <p className="text-foreground/70 mb-6">
-                  Seus dados sensíveis nunca saem da sua infraestrutura. Conformidade LGPD garantida.
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <span className="text-green-600 font-semibold text-sm tracking-wide uppercase">
+                  A solução
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-6 text-foreground leading-tight">
+                  Existe um jeito de ter IA de ponta sem entregar seus dados.
+                </h2>
+                <p className="text-foreground/70 text-lg leading-relaxed mb-6">
+                  A IA BTELWAY instala uma infraestrutura de inteligência artificial dentro da sua
+                  empresa. Os modelos rodam localmente, os dados nunca saem do seu ambiente, e você
+                  paga um valor fixo — sem cobrança por uso.
                 </p>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Processamento local</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Zero APIs externas</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Criptografia fim-a-fim</span>
-                  </li>
+                <ul className="space-y-4">
+                  {[
+                    "Modelos de IA rodando 100% na sua infraestrutura",
+                    "Integração com seus sistemas e documentos internos",
+                    "Gerenciamento completo: nós cuidamos, você foca no negócio",
+                  ].map((line) => (
+                    <li key={line} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground/80">{line}</span>
+                    </li>
+                  ))}
                 </ul>
-              </Card>
+                <Link href="/servicos">
+                  <Button
+                    size="lg"
+                    className="mt-8 bg-green-500 hover:bg-green-600 text-white font-semibold flex items-center gap-2 shadow-lg shadow-green-500/25"
+                  >
+                    Conhecer os serviços <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+              </div>
 
-              {/* Card 2: Controle */}
-              <Card className="p-8 border border-cyan-500/30 hover:border-cyan-400/50 transition-all bg-gradient-to-br from-background to-cyan-500/5 hover:shadow-lg hover:shadow-cyan-500/20">
-                <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
-                  <Zap className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Controle Completo</h3>
-                <p className="text-foreground/70 mb-6">
-                  Você gerencia sua infraestrutura. Nenhuma dependência de terceiros.
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Arquitetura customizável</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Sem vendor lock-in</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Suporte 24/7</span>
-                  </li>
-                </ul>
-              </Card>
-
-              {/* Card 3: Custos */}
-              <Card className="p-8 border border-purple-500/30 hover:border-purple-400/50 transition-all bg-gradient-to-br from-background to-purple-500/5 hover:shadow-lg hover:shadow-purple-500/20">
-                <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30">
-                  <TrendingUp className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground">Custos Previsíveis</h3>
-                <p className="text-foreground/70 mb-6">
-                  Sem surpresas. Sem taxas por token. Sem escaladas inesperadas.
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Preço fixo mensal</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">Sem taxas ocultas</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                    <span className="text-foreground/80 text-sm">ROI em 6 meses</span>
-                  </li>
-                </ul>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Como Funciona */}
-        <section id="architecture" className="py-20 px-4 bg-gradient-to-b from-accent/5 to-background border-y border-border">
-          <div className="container">
-            <h2 className="text-4xl font-bold mb-4 text-foreground text-center">
-              Como Funciona
-            </h2>
-            <p className="text-foreground/70 text-center mb-12 max-w-2xl mx-auto">
-              Três etapas simples para transformar sua operação com IA privada.
-            </p>
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-3 gap-8">
+              {/* 3 pilares em coluna */}
+              <div className="space-y-4">
                 {[
                   {
-                    num: "1",
-                    title: "Avaliação",
-                    desc: "Entendemos sua infraestrutura e necessidades específicas.",
-                    icon: Shield,
+                    icon: Lock,
+                    color: "green",
+                    title: "Privacidade Total",
+                    desc: "Seus dados sensíveis nunca saem da sua infraestrutura. Conformidade LGPD garantida.",
                   },
                   {
-                    num: "2",
-                    title: "Implementação",
-                    desc: "Instalamos e configuramos sua solução de IA privada.",
-                    icon: Database,
+                    icon: Zap,
+                    color: "cyan",
+                    title: "Controle Completo",
+                    desc: "Você gerencia sua infraestrutura. Nenhuma dependência de terceiros ou vendor lock-in.",
                   },
                   {
-                    num: "3",
-                    title: "Suporte",
-                    desc: "Gerenciamento contínuo e otimização da sua plataforma.",
-                    icon: Network,
+                    icon: TrendingUp,
+                    color: "emerald",
+                    title: "Custos Previsíveis",
+                    desc: "Preço fixo mensal. Sem taxas por token, sem surpresas, sem escaladas inesperadas.",
                   },
-                ].map((step, idx) => {
-                  const IconComponent = step.icon;
+                ].map((pillar) => {
+                  const Icon = pillar.icon;
                   return (
-                    <div key={idx} className="text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-cyan-500 text-white flex items-center justify-center mx-auto mb-6 font-bold text-2xl shadow-lg shadow-green-500/30">
-                        {step.num}
+                    <Card
+                      key={pillar.title}
+                      className="p-6 flex items-start gap-5 border border-border hover:border-green-400/40 hover:shadow-lg hover:shadow-green-500/10 transition-all bg-gradient-to-br from-background to-green-500/[0.03]"
+                    >
+                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-cyan-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-500/20">
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
-                      <p className="text-foreground/70 text-sm leading-relaxed">{step.desc}</p>
-                    </div>
+                      <div>
+                        <h3 className="font-bold text-lg text-foreground mb-1">{pillar.title}</h3>
+                        <p className="text-foreground/65 text-sm leading-relaxed">{pillar.desc}</p>
+                      </div>
+                    </Card>
                   );
                 })}
               </div>
@@ -204,45 +273,246 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Casos de Uso */}
-        <section id="roadmap" className="py-20 px-4">
+        {/* ========================= MÉTODO EM FASES ========================= */}
+        <section className="py-20 md:py-28 px-4 bg-gradient-to-b from-accent/[0.04] to-background border-y border-border">
           <div className="container">
-            <h2 className="text-4xl font-bold mb-4 text-foreground text-center">
-              Indústrias que Confiam em Nós
-            </h2>
-            <p className="text-foreground/70 text-center mb-12 max-w-2xl mx-auto">
-              Soluções adaptadas para diferentes setores, sempre com privacidade em primeiro lugar.
-            </p>
-            <div className="grid md:grid-cols-4 gap-6">
-              {["Fintech", "Healthcare", "E-commerce", "Manufatura"].map((industry) => (
-                <Card 
-                  key={industry} 
-                  className="p-8 border border-green-500/20 hover:border-green-400/50 transition-all text-center cursor-pointer hover:shadow-lg hover:shadow-green-500/10 bg-gradient-to-br from-background to-green-500/5"
-                >
-                  <p className="font-bold text-lg text-foreground">{industry}</p>
-                </Card>
-              ))}
+            <div className="text-center mb-16 max-w-2xl mx-auto">
+              <span className="text-green-600 font-semibold text-sm tracking-wide uppercase">
+                Como funciona
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">
+                IA privada implantada em 3 etapas
+              </h2>
+              <p className="text-foreground/65 mt-4 text-lg">
+                Um processo claro, sem complexidade técnica do seu lado.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {[
+                {
+                  num: "01",
+                  phase: "Diagnóstico",
+                  title: "Avaliação",
+                  desc: "Entendemos sua infraestrutura, seus dados e os casos de uso prioritários da sua operação.",
+                  icon: Shield,
+                },
+                {
+                  num: "02",
+                  phase: "Implantação",
+                  title: "Implementação",
+                  desc: "Instalamos e configuramos a infraestrutura de IA privada, integrada aos seus sistemas.",
+                  icon: Database,
+                },
+                {
+                  num: "03",
+                  phase: "Operação",
+                  title: "Suporte Gerenciado",
+                  desc: "Gerenciamento contínuo, monitoramento e otimização da sua plataforma de IA.",
+                  icon: Network,
+                },
+              ].map((step) => {
+                const Icon = step.icon;
+                return (
+                  <div key={step.num} className="relative">
+                    <Card className="p-8 h-full border border-border hover:border-green-400/40 hover:shadow-xl hover:shadow-green-500/10 transition-all">
+                      <div className="flex items-center justify-between mb-6">
+                        <span className="text-5xl font-bold text-green-500/15">{step.num}</span>
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-green-500/20">
+                          <Icon className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
+                      <span className="text-green-600 text-xs font-semibold tracking-wide uppercase">
+                        {step.phase}
+                      </span>
+                      <h3 className="text-xl font-bold text-foreground mt-1 mb-3">{step.title}</h3>
+                      <p className="text-foreground/65 text-sm leading-relaxed">{step.desc}</p>
+                    </Card>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        {/* CTA Final — Premium */}
-        <section id="contact" className="py-20 px-4 border-t border-border">
-          <div className="container text-center">
-            <h2 className="text-5xl font-bold mb-6 text-foreground">
-              Pronto para Transformar Sua Operação?
-            </h2>
-            <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-              Comece com um teste gratuito de 14 dias. Sem cartão de crédito necessário.
-            </p>
-            <Link href="/contato">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-lg shadow-green-500/30"
-              >
-                Agendar Demo Agora
-              </Button>
-            </Link>
+        {/* ========================= COMPARAÇÃO 2 CAMINHOS ========================= */}
+        <section className="py-20 md:py-28 px-4">
+          <div className="container">
+            <div className="text-center mb-16 max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                Você tem duas escolhas agora
+              </h2>
+              <p className="text-foreground/65 mt-4 text-lg">
+                O caminho da exposição ou o caminho do controle.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {/* Caminho 1 */}
+              <Card className="p-8 border border-border bg-muted/30 relative">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-foreground/5 flex items-center justify-center">
+                    <Cloud className="w-6 h-6 text-foreground/40" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground/70">IA Pública na Nuvem</h3>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    "Seus dados saem da empresa",
+                    "Custo por token imprevisível",
+                    "Dependência de terceiros (vendor lock-in)",
+                    "Risco de não-conformidade com a LGPD",
+                  ].map((line) => (
+                    <li key={line} className="flex items-start gap-3">
+                      <XCircle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground/55">{line}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+
+              {/* Caminho 2 */}
+              <Card className="p-8 border-2 border-green-500/40 bg-gradient-to-br from-green-500/[0.06] to-cyan-500/[0.04] relative shadow-xl shadow-green-500/10">
+                <div className="absolute -top-3 right-6 px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">
+                  Recomendado
+                </div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-green-500/20">
+                    <Server className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">IA Privada BTELWAY</h3>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    "Dados 100% dentro da sua infraestrutura",
+                    "Custo fixo mensal, sem surpresas",
+                    "Controle total, sem dependência externa",
+                    "Conformidade LGPD nativa",
+                  ].map((line) => (
+                    <li key={line} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground/85 font-medium">{line}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contato">
+                  <Button className="mt-8 w-full bg-green-500 hover:bg-green-600 text-white font-semibold flex items-center justify-center gap-2 shadow-lg shadow-green-500/25">
+                    Quero o caminho do controle <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================= INDÚSTRIAS ========================= */}
+        <section className="py-20 md:py-24 px-4 bg-gradient-to-b from-background to-accent/[0.04] border-t border-border">
+          <div className="container">
+            <div className="text-center mb-14 max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                Feito para setores onde dado é ativo crítico
+              </h2>
+              <p className="text-foreground/65 mt-4 text-lg">
+                Soluções adaptadas para diferentes segmentos, sempre com privacidade em primeiro
+                lugar.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
+              {[
+                { name: "Fintech", icon: Building2 },
+                { name: "Saúde", icon: Stethoscope },
+                { name: "E-commerce", icon: ShoppingCart },
+                { name: "Indústria", icon: Factory },
+              ].map((ind) => {
+                const Icon = ind.icon;
+                return (
+                  <Card
+                    key={ind.name}
+                    className="p-8 border border-border hover:border-green-400/50 transition-all text-center hover:shadow-lg hover:shadow-green-500/10 group"
+                  >
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500/10 to-cyan-500/10 border border-green-400/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
+                      <Icon className="w-7 h-7 text-green-600" />
+                    </div>
+                    <p className="font-bold text-foreground">{ind.name}</p>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* ========================= QUALIFICADOR ========================= */}
+        <section className="py-20 md:py-24 px-4">
+          <div className="container">
+            <Card className="max-w-4xl mx-auto p-8 md:p-12 border border-green-500/20 bg-gradient-to-br from-green-500/[0.04] to-transparent">
+              <div className="flex items-center gap-3 mb-6">
+                <Cpu className="w-7 h-7 text-green-600" />
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  A IA BTELWAY não é para todos.
+                </h2>
+              </div>
+              <p className="text-foreground/70 text-lg mb-8 leading-relaxed">
+                Somos para empresas que levam a segurança da informação a sério e enxergam a IA como
+                vantagem competitiva — não como brinquedo.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  "Para gestores que não podem arriscar vazamento de dados.",
+                  "Para empresas que querem previsibilidade de custos.",
+                  "Para operações que precisam de conformidade com a LGPD.",
+                  "Para quem busca autonomia e não dependência de Big Techs.",
+                ].map((line) => (
+                  <div key={line} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/80">{line}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+        </section>
+
+        {/* ========================= CTA FINAL ========================= */}
+        <section className="px-4 pb-24">
+          <div className="container">
+            <div className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden">
+              <div className="absolute inset-0 bg-[#04140c]" />
+              <div className="absolute inset-0 opacity-40">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-green-500 rounded-full blur-3xl opacity-30" />
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500 rounded-full blur-3xl opacity-20" />
+              </div>
+              <div className="relative z-10 text-center px-6 py-16 md:py-20">
+                <h2 className="text-3xl md:text-5xl font-bold mb-5 text-white leading-tight">
+                  Pronto para trazer sua IA para casa?
+                </h2>
+                <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
+                  Agende uma conversa de 15 minutos, sem compromisso, e receba um diagnóstico de como
+                  a IA privada pode ser implantada na sua empresa.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link href="/contato">
+                    <Button
+                      size="lg"
+                      className="bg-green-500 hover:bg-green-600 text-white font-semibold flex items-center gap-2 w-full sm:w-auto shadow-xl shadow-green-500/30 h-13 px-8 text-base"
+                    >
+                      Agendar diagnóstico gratuito <ArrowRight className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-white/30 bg-white/5 text-white hover:bg-white/15 hover:border-white/50 w-full sm:w-auto backdrop-blur-sm h-13 px-8 text-base"
+                    >
+                      Falar no WhatsApp
+                    </Button>
+                  </a>
+                </div>
+                <p className="text-white/50 text-sm mt-6">
+                  Sem pressão, sem truques. Apenas uma conversa estratégica.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>

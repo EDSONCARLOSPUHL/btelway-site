@@ -28,12 +28,12 @@ export default function Architecture() {
             </h2>
             <Card className="p-8 border border-border bg-accent/5">
               <img 
-                src="/architecture-diagram.webp" 
+                src="/architecture-diagram-v2.webp" 
                 alt="Arquitetura Técnica IA BTELWAY" 
                 className="w-full rounded-lg"
               />
               <p className="text-foreground/70 text-sm mt-6 text-center">
-                Control-plane (R530) orquestra requisições. Nós de inferência (EVO-X2/DGX) processam modelos de IA. Roteador em cascata decide: local (privado) ou externo (APIs premium).
+                O servidor de orquestração gerencia as requisições. Os nós de inferência com GPU processam os modelos de IA localmente. Um roteador inteligente decide, a cada pergunta, se a resposta é gerada de forma privada (local) ou escalada para APIs externas quando não há dados sensíveis envolvidos.
               </p>
             </Card>
           </div>
@@ -200,7 +200,7 @@ export default function Architecture() {
                   {
                     step: "1",
                     title: "Pergunta Recebida",
-                    desc: "Usuário envia pergunta pela interface Open WebUI",
+                    desc: "O usuário envia uma pergunta pela interface privada da plataforma",
                   },
                   {
                     step: "2",
@@ -215,7 +215,7 @@ export default function Architecture() {
                   {
                     step: "4",
                     title: "Escalação Opcional",
-                    desc: "Se complexa E não sensível → pode escalar para API premium (GPT/Claude/Gemini)",
+                    desc: "Se complexa E não sensível → pode escalar para uma API externa premium, sem expor dados confidenciais",
                   },
                   {
                     step: "5",
