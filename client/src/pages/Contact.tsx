@@ -14,7 +14,7 @@ import { toast } from "sonner";
 // Enquanto o ID for "SEU_FORM_ID", o formulário abrirá o e-mail/WhatsApp como alternativa.
 const FORMSPREE_ID = "SEU_FORM_ID";
 const CONTACT_EMAIL = "edsonpuhl@gmail.com";
-const WHATSAPP_NUMBER = "5554996032518"; // +55 (54) 9 9603-2518
+const WHATSAPP_NUMBER = "5554933806130"; // +55 (54) 9 3380-6130
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", company: "", message: "" });
@@ -191,8 +191,8 @@ export default function Contact() {
                       <Phone className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
-                        <a href="tel:+5554996032518" className="text-foreground/70 hover:text-accent transition-colors">
-                          +55 (54) 9 9603-2518
+                        <a href="tel:+5554933806130" className="text-foreground/70 hover:text-accent transition-colors">
+                          +55 (54) 9 3380-6130
                         </a>
                       </div>
                     </div>

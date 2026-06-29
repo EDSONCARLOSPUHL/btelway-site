@@ -20,9 +20,9 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img
-                src="/manus-storage/logo-btelway_260ef5b2.png"
-                alt="IA BTELWAY Logo"
-                className="w-8 h-8"
+                src="/manus-storage/btelway-logo_c0751b4d.png"
+                alt="BTELway Logo"
+                className="h-10 w-auto bg-white rounded-md p-1"
               />
               <span className="font-bold text-lg">IA BTELWAY</span>
             </div>
