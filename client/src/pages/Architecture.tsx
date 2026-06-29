@@ -52,15 +52,15 @@ export default function Architecture() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Control-Plane</h3>
                 <p className="text-foreground/70 mb-6">
-                  <strong>Dell PowerEdge R530</strong> — Servidor de orquestração e interface.
+                  <strong>Servidor Dell</strong> — Orquestração, interface e gerenciamento de IA.
                 </p>
                 <ul className="space-y-2 text-sm text-foreground/80">
-                  <li><strong>CPU:</strong> 2× Intel Xeon E5-2609 v3 @ 1.90GHz (12 núcleos)</li>
-                  <li><strong>RAM:</strong> 32 GB DDR4 ECC (expansível)</li>
-                  <li><strong>Disco 1:</strong> RAID 10 ~7,3 TB (sistema + serviços)</li>
-                  <li><strong>Disco 2:</strong> ~5,5 TB (modelos, RAG, dados)</li>
+                  <li><strong>CPU:</strong> DELL Intel Xeon</li>
+                  <li><strong>RAM:</strong> 128 GB</li>
+                  <li><strong>Disco 1:</strong> RAID 10 (sistema + serviços)</li>
+                  <li><strong>Disco 2:</strong> Storage (modelos, RAG, dados)</li>
                   <li><strong>SO:</strong> Ubuntu Server 24.04 LTS</li>
-                  <li><strong>IP:</strong> 177.11.160.31/26</li>
+                  <li><strong>Papel:</strong> Orquestração, sem inferência pesada</li>
                 </ul>
               </Card>
 
@@ -70,15 +70,15 @@ export default function Architecture() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Nós de Inferência</h3>
                 <p className="text-foreground/70 mb-6">
-                  <strong>GMKtec EVO-X2</strong> — Onde os modelos de IA rodam.
+                  <strong>Servidor com GPU</strong> — Executa os modelos de IA em tempo real.
                 </p>
                 <ul className="space-y-2 text-sm text-foreground/80">
-                  <li><strong>CPU:</strong> Ryzen AI Max+ 395</li>
-                  <li><strong>GPU:</strong> RDNA 3.5 (ROCm — 100% open source)</li>
-                  <li><strong>RAM:</strong> 128 GB LPDDR5X (soldada)</li>
-                  <li><strong>Modelos:</strong> DeepSeek-R1 70B, Llama 3.3 70B, Qwen 72B</li>
-                  <li><strong>Capacidade:</strong> Até 128GB de modelos simultâneos</li>
-                  <li><strong>Próximo:</strong> NVIDIA DGX Spark (256GB em par)</li>
+                  <li><strong>Processador:</strong> CPU de alto desempenho + GPU dedicada</li>
+                  <li><strong>RAM:</strong> 128 GB (escalável)</li>
+                  <li><strong>GPU:</strong> Acelerador de IA (ROCm ou CUDA)</li>
+                  <li><strong>Modelos suportados:</strong> Até 128GB de modelos simultâneos</li>
+                  <li><strong>Escalabilidade:</strong> Múltiplos nós para crescimento</li>
+                  <li><strong>Redundância:</strong> Suporte a alta disponibilidade</li>
                 </ul>
               </Card>
             </div>
@@ -95,42 +95,42 @@ export default function Architecture() {
               {[
                 {
                   layer: "Sistema Operacional",
-                  tool: "Ubuntu Server 24.04 LTS",
+                  tool: "Linux (Ubuntu LTS)",
                   desc: "Base sólida, suporte de longo prazo, comunidade ativa",
                 },
                 {
                   layer: "Contêineres",
-                  tool: "Docker + Docker Compose",
+                  tool: "Docker",
                   desc: "Isolamento, portabilidade, fácil deploy",
                 },
                 {
                   layer: "Motor de IA",
-                  tool: "Ollama",
-                  desc: "Gerencia modelos, downloads, execução local",
+                  tool: "Engine de IA Privada",
+                  desc: "Gerencia modelos, execução local, sem envio de dados",
                 },
                 {
                   layer: "Interface Web",
-                  tool: "Open WebUI",
+                  tool: "Dashboard Privado",
                   desc: "Chat interativo, gerenciamento de modelos, histórico",
                 },
                 {
                   layer: "Banco Vetorial (RAG)",
-                  tool: "Qdrant",
+                  tool: "Vector Database",
                   desc: "Indexa documentos, busca semântica, contexto para IA",
                 },
                 {
                   layer: "Automação",
-                  tool: "n8n / Node-RED",
-                  desc: "Fluxos de trabalho, integrações, webhooks",
+                  tool: "Workflow Engine",
+                  desc: "Fluxos de trabalho, integrações, automação",
                 },
                 {
-                  layer: "Busca Web Privada",
-                  tool: "SearXNG + Valkey",
+                  layer: "Busca Privada",
+                  tool: "Search Engine",
                   desc: "Busca sem rastrear usuário, cache distribuído",
                 },
                 {
                   layer: "Monitoramento",
-                  tool: "Netdata + Nginx",
+                  tool: "Monitoring Stack",
                   desc: "Métricas em tempo real, alertas, dashboard",
                 },
               ].map((item, idx) => (
@@ -158,8 +158,8 @@ export default function Architecture() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Firewall UFW",
-                  desc: "Camada de proteção local, SSH em porta customizada (52222), bloqueio padrão de entrada",
+                  title: "Firewall e Segurança",
+                  desc: "Camada de proteção local, acesso seguro, bloqueio padrão de entrada",
                   icon: Shield,
                 },
                 {

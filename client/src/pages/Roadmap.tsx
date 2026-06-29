@@ -10,17 +10,17 @@ export default function Roadmap() {
       title: "Núcleo de IA",
       status: "Em Andamento",
       completed: [
-        "Ubuntu Server 24.04 LTS instalado",
-        "Segurança (firewall UFW, SSH endurecido)",
-        "Docker + Ollama + Open WebUI operacional",
-        "Primeiro modelo (llama3.2:3b) respondendo",
-        "Monitoramento (Netdata) ativo",
+        "Sistema operacional instalado e seguro",
+        "Segurança (firewall, acesso endurecido)",
+        "Contêineres e orquestração operacionais",
+        "Primeiro modelo de IA respondendo",
+        "Monitoramento e alertas ativos",
       ],
       pending: [
-        "Qdrant + RAG (responder sobre documentos)",
-        "n8n / Node-RED (automação)",
-        "SearXNG (busca web privada)",
-        "Backup das configurações",
+        "Vector database + RAG (responder sobre documentos)",
+        "Workflow automation",
+        "Busca privada integrada",
+        "Backup e disaster recovery",
       ],
       timeline: "Junho - Julho 2026",
       color: "from-cyan-500 to-blue-500",
@@ -31,12 +31,12 @@ export default function Roadmap() {
       status: "Planejado",
       completed: [],
       pending: [
-        "Adquirir GMKtec EVO-X2 128GB",
-        "Migrar inferência para GPU (ROCm)",
-        "R530 passa a ser puro control-plane",
-        "Instalar MikroTik CCR1072 na frente",
-        "HTTPS no Open WebUI (domínio + VPN)",
-        "Modelos 70B rodando localmente",
+        "Adquirir servidor com GPU dedicada",
+        "Migrar inferência para acelerador",
+        "Separar control-plane de processamento",
+        "Instalar roteador de segurança",
+        "HTTPS e VPN para acesso remoto",
+        "Modelos de IA maiores rodando localmente",
       ],
       timeline: "Agosto - Setembro 2026",
       color: "from-purple-500 to-pink-500",
@@ -47,12 +47,12 @@ export default function Roadmap() {
       status: "Futuro",
       completed: [],
       pending: [
-        "Ligar parque de servidores (R610, G7)",
+        "Expandir parque de servidores",
         "Alta disponibilidade (HA) do control-plane",
-        "Segundo nó de IA (Spark) ou par (256GB)",
-        "Modelos classe 405B",
-        "Monitoramento central (Zabbix)",
-        "SLA de cliente a cumprir",
+        "Múltiplos nós de IA para redundância",
+        "Modelos de IA de última geração",
+        "Monitoramento centralizado",
+        "SLA de cliente com garantias",
       ],
       timeline: "Outubro 2026+",
       color: "from-green-500 to-emerald-500",
@@ -165,45 +165,52 @@ export default function Roadmap() {
           </div>
         </section>
 
-        {/* Modelos de IA */}
+        {/* Capacidades de IA */}
         <section className="py-20 px-4">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
-              Modelos de IA Planejados
+              Capacidades de IA
             </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-border">
-                    <th className="text-left py-4 px-4 font-bold text-foreground">Categoria</th>
-                    <th className="text-left py-4 px-4 font-bold text-foreground">Modelo</th>
-                    <th className="text-left py-4 px-4 font-bold text-foreground">Tamanho</th>
-                    <th className="text-left py-4 px-4 font-bold text-foreground">VRAM Q4</th>
-                    <th className="text-left py-4 px-4 font-bold text-foreground">Caso de Uso</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { cat: "Raciocínio", model: "DeepSeek-R1 70B Distill", size: "70B", vram: "~42 GB", use: "Problemas complexos, análise" },
-                    { cat: "Geral PT-BR", model: "Llama 3.3 70B", size: "70B", vram: "~42 GB", use: "Conversas gerais, suporte" },
-                    { cat: "Programação", model: "Qwen 2.5 Coder 32B", size: "32B", vram: "~20 GB", use: "Código, debugging, arquitetura" },
-                    { cat: "Visão", model: "Qwen 2.5 VL 72B", size: "72B", vram: "~46 GB", use: "Análise de imagens, OCR" },
-                    { cat: "Ação Rápida", model: "Llama 3.1 8B / Qwen 2.5 7B", size: "7-8B", vram: "~6 GB", use: "Respostas rápidas, classificação" },
-                    { cat: "RAG (Embedding)", model: "BGE-M3", size: "0.5B", vram: "~2 GB", use: "Indexação de documentos" },
-                    { cat: "RAG (Reranker)", model: "BGE-Reranker-v2-m3", size: "0.5B", vram: "~2 GB", use: "Ordenação de resultados" },
-                    { cat: "Imagem", model: "Flux.1 [dev] (ComfyUI)", size: "12B", vram: "~24 GB", use: "Geração de imagens" },
-                    { cat: "Áudio", model: "Whisper Large-v3", size: "1.5B", vram: "~8 GB", use: "Transcrição de áudio" },
-                  ].map((row, idx) => (
-                    <tr key={idx} className="border-b border-border/50">
-                      <td className="py-4 px-4 text-foreground font-semibold">{row.cat}</td>
-                      <td className="py-4 px-4 text-foreground">{row.model}</td>
-                      <td className="py-4 px-4 text-foreground/70">{row.size}</td>
-                      <td className="py-4 px-4 text-accent">{row.vram}</td>
-                      <td className="py-4 px-4 text-foreground/70">{row.use}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="grid md:grid-cols-2 gap-8">
+              {[
+                {
+                  title: "Raciocínio e Análise",
+                  desc: "Modelos especializados em problemas complexos, lógica e análise profunda",
+                },
+                {
+                  title: "Conversá Geral (PT-BR)",
+                  desc: "Suporte em português, conversas naturais, atendimento ao cliente",
+                },
+                {
+                  title: "Programação e Desenvolvimento",
+                  desc: "Código, debugging, arquitetura de software, revisão de código",
+                },
+                {
+                  title: "Visão e Imagens",
+                  desc: "Análise de imagens, OCR, extração de texto, geração de imagens",
+                },
+                {
+                  title: "Respostas Rápidas",
+                  desc: "Classificação, tagging, respostas instantâneas com baixa latência",
+                },
+                {
+                  title: "Busca e Contexto (RAG)",
+                  desc: "Indexação de documentos, busca semântica, enriquecimento de contexto",
+                },
+                {
+                  title: "Audio e Transcrição",
+                  desc: "Transcrição de áudio, reconhecimento de fala, processamento de mídia",
+                },
+                {
+                  title: "Automação e Workflows",
+                  desc: "Fluxos de trabalho inteligentes, integrações, orquestração de tarefas",
+                },
+              ].map((item, idx) => (
+                <Card key={idx} className="p-6 border border-border">
+                  <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
+                  <p className="text-foreground/70 text-sm">{item.desc}</p>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
