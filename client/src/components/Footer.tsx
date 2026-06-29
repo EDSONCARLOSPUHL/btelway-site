@@ -12,8 +12,8 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img
-                src="/manus-storage/logo-edson-ia_c9b074bd.png"
-                alt="Edson IA Logo"
+                src="/manus-storage/logo-btelway_260ef5b2.png"
+                alt="IA BTELWAY Logo"
                 className="w-8 h-8"
               />
               <span className="font-bold text-lg">IA BTELWAY</span>

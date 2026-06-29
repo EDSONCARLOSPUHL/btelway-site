@@ -19,8 +19,8 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <img
-            src="/manus-storage/logo-edson-ia_c9b074bd.png"
-            alt="Edson IA Logo"
+            src="/manus-storage/logo-btelway_260ef5b2.png"
+            alt="IA BTELWAY Logo"
             className="w-8 h-8 transition-transform group-hover:scale-110"
           />
           <span className="font-bold text-lg text-primary hidden sm:inline">
