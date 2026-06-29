@@ -17,7 +17,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="/" className="flex items-center gap-2 group">
           <img
             src="/manus-storage/logo-btelway_260ef5b2.png"
             alt="IA BTELWAY Logo"
