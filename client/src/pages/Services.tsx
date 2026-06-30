@@ -5,6 +5,7 @@
  */
 import { Link } from "wouter";
 import Header from "@/components/Header";
+import TechBackground from "@/components/TechBackground";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -105,7 +106,8 @@ export default function Services() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-transparent">
+      <TechBackground />
       <Header />
       <Seo
         title="Serviços e Planos | IA BTELWAY - IA Privada e Soberana"
@@ -166,13 +168,13 @@ export default function Services() {
         </section>
 
         {/* Comparação Detalhada */}
-        <section className="py-20 px-4 bg-muted/40 border-y border-border">
+        <section className="py-20 px-4 bg-muted/20 border-y border-border">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
               Comparação de Recursos
             </h2>
             <div className="overflow-x-auto">
-              <table className="w-full text-sm bg-background rounded-xl overflow-hidden">
+              <table className="w-full text-sm bg-background/50 rounded-xl overflow-hidden">
                 <thead>
                   <tr className="border-b border-border bg-muted/50">
                     <th className="text-left py-4 px-4 font-bold text-foreground">Recurso</th>
@@ -285,7 +287,7 @@ export default function Services() {
         </section>
 
         {/* FAQ */}
-        <section className="py-20 px-4 bg-muted/40 border-y border-border">
+        <section className="py-20 px-4 bg-muted/20 border-y border-border">
           <div className="container">
             <h2 className="text-3xl font-bold mb-12 text-foreground text-center">
               Perguntas Frequentes

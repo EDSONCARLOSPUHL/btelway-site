@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import TechBackground from "@/components/TechBackground";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -87,7 +88,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-transparent">
+      <TechBackground />
       <Header />
       <Seo
         title="Contato | IA BTELWAY - IA Privada e Soberana"

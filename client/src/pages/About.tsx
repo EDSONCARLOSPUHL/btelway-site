@@ -6,6 +6,7 @@
  */
 import { Link } from "wouter";
 import Header from "@/components/Header";
+import TechBackground from "@/components/TechBackground";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -69,7 +70,8 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-transparent">
+      <TechBackground />
       <Header />
       <Seo
         title="Quem Somos | IA BTELWAY - IA Privada e Soberana"
@@ -148,7 +150,7 @@ export default function About() {
         </section>
 
         {/* Missão e Visão */}
-        <section className="py-20 px-4 bg-muted/40 border-y border-border">
+        <section className="py-20 px-4 bg-muted/20 border-y border-border">
           <div className="container grid md:grid-cols-2 gap-8">
             <Card className="p-8 border border-border">
               <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-6">
@@ -202,7 +204,7 @@ Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir m�
         </section>
 
         {/* Como Trabalhamos */}
-        <section className="py-20 px-4 bg-muted/40 border-y border-border">
+        <section className="py-20 px-4 bg-muted/20 border-y border-border">
           <div className="container">
             <div className="text-center mb-12">
               <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
@@ -314,7 +316,7 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
         </section>
 
         {/* Reconhecimentos */}
-        <section className="py-16 px-4 bg-muted/40 border-y border-border">
+        <section className="py-16 px-4 bg-muted/20 border-y border-border">
           <div className="container">
             <div className="flex items-center justify-center gap-3 mb-10">
               <Award className="w-6 h-6 text-green-500" />

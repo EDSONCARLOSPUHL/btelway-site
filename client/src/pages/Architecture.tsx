@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import TechBackground from "@/components/TechBackground";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -6,7 +7,8 @@ import { Server, Database, Shield, Zap, Network, Code } from "lucide-react";
 
 export default function Architecture() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-transparent">
+      <TechBackground />
       <Header />
       <Seo
         title="Arquitetura | IA BTELWAY - IA Privada e Soberana"
