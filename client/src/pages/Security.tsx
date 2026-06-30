@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -26,16 +27,11 @@ export default function Security() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Segurança & Conformidade
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Segurança de nível empresarial, com as certificações que sua empresa precisa.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Proteção de Nível Empresarial"
+          title={<>Segurança & <span className="text-green-500">Conformidade</span></>}
+          subtitle="Segurança de nível empresarial, com as certificações que sua empresa precisa."
+        />
 
         {/* Certifications */}
         <section className="py-20 px-4">

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -66,16 +67,11 @@ export default function UseCases() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Casos de Uso por Indústria
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Veja como diferentes setores transformam suas operações com IA privada.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Aplicações Reais"
+          title={<>Casos de Uso por <span className="text-green-500">Indústria</span></>}
+          subtitle="Veja como diferentes setores transformam suas operações com IA privada."
+        />
 
         {/* Cases Grid */}
         <section className="py-20 px-4">

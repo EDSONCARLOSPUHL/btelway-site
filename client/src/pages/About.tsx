@@ -7,6 +7,7 @@
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -80,22 +81,11 @@ export default function About() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="relative py-24 px-4 bg-[#08160f] text-white overflow-hidden">
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,#22c55e,transparent_55%)]" />
-          <div className="container relative">
-            <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
-              Quem Somos
-            </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl leading-tight">
-              Tecnologia a serviço da{" "}
-              <span className="text-green-500">soberania dos seus dados</span>.
-            </h1>
-            <p className="text-xl text-white/80 max-w-2xl">
-              Nascemos para resolver um problema crítico: usar o poder da IA sem entregar dados
-              confidenciais a terceiros.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Quem Somos"
+          title={<>Tecnologia a serviço da <span className="text-green-500">soberania dos seus dados</span>.</>}
+          subtitle="Nascemos para resolver um problema crítico: usar o poder da IA sem entregar dados confidenciais a terceiros."
+        />
 
         {/* Propósito / Manifesto */}
         <section className="py-20 px-4">

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -98,16 +99,11 @@ export default function Contact() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Vamos Conversar
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Fale com a gente e descubra como a IA privada transforma seu negócio.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Fale com Especialistas"
+          title={<>Vamos <span className="text-green-500">Conversar</span></>}
+          subtitle="Fale com a gente e descubra como a IA privada transforma seu negócio."
+        />
 
         {/* Contact Section */}
         <section className="py-20 px-4">
@@ -125,7 +121,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Seu nome"
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-foreground/50 focus:outline-none focus:border-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-green-500/20 text-white placeholder:text-white/40 focus:outline-none focus:border-green-500/60 focus:ring-1 focus:ring-green-500/40 transition-colors"
                     />
                   </div>
                   <div>
@@ -136,7 +132,7 @@ export default function Contact() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="seu@email.com"
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-foreground/50 focus:outline-none focus:border-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-green-500/20 text-white placeholder:text-white/40 focus:outline-none focus:border-green-500/60 focus:ring-1 focus:ring-green-500/40 transition-colors"
                     />
                   </div>
                   <div>
@@ -147,7 +143,7 @@ export default function Contact() {
                       value={form.company}
                       onChange={handleChange}
                       placeholder="Sua empresa"
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-foreground/50 focus:outline-none focus:border-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-green-500/20 text-white placeholder:text-white/40 focus:outline-none focus:border-green-500/60 focus:ring-1 focus:ring-green-500/40 transition-colors"
                     />
                   </div>
                   <div>
@@ -158,7 +154,7 @@ export default function Contact() {
                       onChange={handleChange}
                       placeholder="Como podemos ajudar?"
                       rows={5}
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-foreground/50 focus:outline-none focus:border-accent resize-none"
+                      className="w-full px-4 py-3 rounded-lg bg-white/[0.04] border border-green-500/20 text-white placeholder:text-white/40 focus:outline-none focus:border-green-500/60 focus:ring-1 focus:ring-green-500/40 transition-colors resize-none"
                     />
                   </div>
                   <Button

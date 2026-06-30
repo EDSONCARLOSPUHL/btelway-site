@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -31,7 +32,7 @@ export default function Solutions() {
         "Monitoramento contínuo",
         "Suporte técnico 24/7"
       ],
-      color: "from-purple-500 to-pink-500"
+      color: "from-green-500 to-green-600"
     },
     {
       icon: Zap,
@@ -58,16 +59,11 @@ export default function Solutions() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Soluções Completas de IA Privada
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Três pilares que transformam sua operação: privacidade total, controle absoluto e custos previsíveis.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Plataforma de IA Soberana"
+          title={<>Soluções Completas de <span className="text-green-500">IA Privada</span></>}
+          subtitle="Três pilares que transformam sua operação: privacidade total, controle absoluto e custos previsíveis."
+        />
 
         {/* Solutions Grid */}
         <section className="py-20 px-4">

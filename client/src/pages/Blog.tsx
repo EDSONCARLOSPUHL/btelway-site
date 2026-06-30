@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -68,16 +69,11 @@ export default function Blog() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Blog & Recursos
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Artigos, guias e case studies sobre IA Privada, segurança e transformação digital.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Conhecimento & Insights"
+          title={<>Blog & <span className="text-green-500">Recursos</span></>}
+          subtitle="Artigos, guias e case studies sobre IA Privada, segurança e transformação digital."
+        />
 
         {/* Blog Posts */}
         <section className="py-20 px-4">
@@ -124,7 +120,7 @@ export default function Blog() {
               <input
                 type="email"
                 placeholder="seu@email.com"
-                className="flex-1 px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-foreground/50 focus:outline-none focus:border-accent"
+                className="flex-1 px-4 py-3 rounded-lg bg-white/[0.04] border border-green-500/20 text-white placeholder:text-white/40 focus:outline-none focus:border-green-500/60 focus:ring-1 focus:ring-green-500/40 transition-colors"
               />
               <button className="px-6 py-3 bg-accent hover:bg-accent/90 text-white rounded-lg font-semibold transition-colors">
                 Inscrever

@@ -50,7 +50,7 @@
   --sidebar-primary-foreground: oklch(1 0 0);
   
   /* Cyan accent for IA/innovation */
-  --accent: oklch(0.65 0.15 200); /* Cyan #06B6D4 */
+  --accent: oklch(0.72 0.17 155); /* Verde da marca (unificado) */
   --accent-foreground: oklch(0.15 0.08 260);
   
   /* Green for success/privacy */
@@ -102,7 +102,7 @@
   --secondary-foreground: oklch(0.92 0.01 150);
   --muted: oklch(0.31 0.026 165);
   --muted-foreground: oklch(0.80 0.02 150);
-  --accent: oklch(0.70 0.13 195); /* Cyan accent */
+  --accent: oklch(0.72 0.17 155); /* Verde da marca (unificado) */
   --accent-foreground: oklch(0.12 0.02 160);
   --destructive: oklch(0.70 0.19 22);
   --destructive-foreground: oklch(0.985 0 0);
@@ -110,7 +110,7 @@
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.72 0.17 155);
   --chart-1: oklch(0.72 0.17 155);
-  --chart-2: oklch(0.70 0.13 195);
+  --chart-2: oklch(0.62 0.16 158);
   --chart-3: oklch(0.60 0.15 160);
   --chart-4: oklch(0.65 0.18 40);
   --chart-5: oklch(0.60 0.10 280);
@@ -253,11 +253,24 @@
   animation: pulse-soft 2s ease-in-out infinite;
 }
 
+@keyframes hero-scan {
+  0% { transform: translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+.hero-scanline {
+  top: 0;
+  animation: hero-scan 6s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in,
   .animate-fade-in-up,
   .animate-slide-in-left,
-  .animate-pulse-soft {
+  .animate-pulse-soft,
+  .hero-scanline {
     animation: none;
   }
 }

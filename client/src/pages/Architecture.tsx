@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -17,16 +18,11 @@ export default function Architecture() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Arquitetura Técnica
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Infraestrutura robusta, segura e escalável. Dados privados e processamento local — sem dependências externas.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Infraestrutura de IA Privada"
+          title={<>Arquitetura <span className="text-green-500">Técnica</span></>}
+          subtitle="Infraestrutura robusta, segura e escalável. Dados privados e processamento local — sem dependências externas."
+        />
 
         {/* Diagrama Arquitetura */}
         <section className="py-20 px-4">
@@ -73,7 +69,7 @@ export default function Architecture() {
               </Card>
 
               <Card className="p-8 border border-border">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center mb-6">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Nós de Inferência</h3>

@@ -6,6 +6,7 @@
 import { Link } from "wouter";
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -40,7 +41,7 @@ export default function Services() {
         "Interface web privada (acesso por VPN)",
         "Conformidade LGPD garantida",
       ],
-      color: "from-purple-500 to-pink-500",
+      color: "from-green-500 to-green-600",
     },
     {
       id: 3,
@@ -116,19 +117,11 @@ export default function Services() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
-              Serviços & Planos
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Serviços e Investimento
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Três níveis — da segurança de rede à IA privada completa. Custo fixo e previsível.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Serviços & Planos"
+          title={<>Serviços e <span className="text-green-500">Investimento</span></>}
+          subtitle="Três níveis — da segurança de rede à IA privada completa. Custo fixo e previsível."
+        />
 
         {/* Services Grid */}
         <section className="py-20 px-4">

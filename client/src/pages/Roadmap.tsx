@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import TechBackground from "@/components/TechBackground";
+import PageHero from "@/components/PageHero";
 import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -41,7 +42,7 @@ export default function Roadmap() {
         "Modelos de IA maiores rodando localmente",
       ],
       timeline: "Agosto - Setembro 2026",
-      color: "from-purple-500 to-pink-500",
+      color: "from-green-500 to-green-600",
     },
     {
       phase: 3,
@@ -72,16 +73,11 @@ export default function Roadmap() {
       />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 border-b border-border">
-          <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Roadmap de Implantação
-            </h1>
-            <p className="text-xl text-foreground/85 max-w-2xl">
-              Três fases: do núcleo de IA à escala. Crescimento puxado pela demanda, não pelo capital.
-            </p>
-          </div>
-        </section>
+        <PageHero
+          eyebrow="Roteiro de Evolução"
+          title={<>Roadmap de <span className="text-green-500">Implantação</span></>}
+          subtitle="Três fases: do núcleo de IA à escala. Crescimento puxado pela demanda, não pelo capital."
+        />
 
         {/* Timeline */}
         <section className="py-20 px-4">
