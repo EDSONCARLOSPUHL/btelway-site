@@ -223,9 +223,9 @@ export default function Home() {
                 ].map((stat) => (
                   <Card
                     key={stat.label}
-                    className="p-6 text-center border border-green-500/20 bg-white shadow-xl shadow-green-900/5"
+                    className="p-6 text-center border border-green-500/20 bg-white/[0.04] shadow-xl shadow-green-900/20"
                   >
-                    <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent mb-1">
+                    <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent mb-1">
                       {stat.value}
                     </p>
                     <p className="text-foreground/60 text-sm">{stat.label}</p>
