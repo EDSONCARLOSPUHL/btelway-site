@@ -63,7 +63,7 @@ export default function Header() {
 
   const solid = scrolled || mobileMenuOpen || !isHome;
   const linkColor = solid
-    ? "text-white/75 hover:text-green-400"
+    ? "text-white/75 hover:text-green-500"
     : "text-white/80 hover:text-white";
 
   return (
@@ -78,9 +78,9 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group shrink-0">
           <img
-            src="/btelway-logo.png"
+            src="/logo-btelway.png"
             alt="BTELway"
-            className="h-10 w-auto transition-transform group-hover:scale-105"
+            className="h-11 w-auto transition-transform group-hover:scale-105"
           />
           <span
             className="font-bold text-lg hidden sm:inline transition-colors text-white"
@@ -125,7 +125,7 @@ export default function Header() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="block text-sm font-medium text-white/75 hover:text-green-400 hover:bg-green-500/10 transition-colors rounded-lg px-3 py-2.5"
+                        className="block text-sm font-medium text-white/75 hover:text-green-500 hover:bg-green-500/10 transition-colors rounded-lg px-3 py-2.5"
                       >
                         {item.label}
                       </Link>
@@ -173,7 +173,7 @@ export default function Header() {
               isGroup(entry) ? (
                 <div key={entry.label}>
                   <button
-                    className="w-full flex items-center justify-between text-sm font-semibold text-white hover:text-green-400 hover:bg-white/5 transition-colors py-3 px-2 rounded-lg"
+                    className="w-full flex items-center justify-between text-sm font-semibold text-white hover:text-green-500 hover:bg-white/5 transition-colors py-3 px-2 rounded-lg"
                     onClick={() =>
                       setOpenMobile((cur) => (cur === entry.label ? null : entry.label))
                     }
@@ -192,7 +192,7 @@ export default function Header() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="text-sm font-medium text-white/65 hover:text-green-400 hover:bg-white/5 transition-colors py-2.5 px-2 rounded-lg"
+                          className="text-sm font-medium text-white/65 hover:text-green-500 hover:bg-white/5 transition-colors py-2.5 px-2 rounded-lg"
                           onClick={closeMobile}
                         >
                           {item.label}
@@ -205,7 +205,7 @@ export default function Header() {
                 <Link
                   key={entry.label}
                   href={entry.href}
-                  className="text-sm font-semibold text-white hover:text-green-400 hover:bg-white/5 transition-colors py-3 px-2 rounded-lg"
+                  className="text-sm font-semibold text-white hover:text-green-500 hover:bg-white/5 transition-colors py-3 px-2 rounded-lg"
                   onClick={closeMobile}
                 >
                   {entry.label}

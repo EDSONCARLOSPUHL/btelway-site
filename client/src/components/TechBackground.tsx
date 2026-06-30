@@ -10,7 +10,7 @@ export default function TechBackground() {
       {/* Degradê base: escuro -> tom levemente azulado-esverdeado */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#04140c] via-[#06180f] to-[#04120e]" />
 
-      {/* Brilhos radiais discretos (verde/cyan) para dar profundidade */}
+      {/* Brilhos radiais discretos (verde da marca) para dar profundidade */}
       <div
         className="absolute -top-32 -left-24 w-[40rem] h-[40rem] rounded-full opacity-[0.18] blur-3xl"
         style={{
@@ -22,7 +22,7 @@ export default function TechBackground() {
         className="absolute top-1/3 right-[-10rem] w-[36rem] h-[36rem] rounded-full opacity-[0.12] blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(45,212,191,0.5) 0%, rgba(45,212,191,0) 70%)",
+            "radial-gradient(circle, rgba(34,197,94,0.45) 0%, rgba(34,197,94,0) 70%)",
         }}
       />
 

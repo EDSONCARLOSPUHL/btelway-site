@@ -22,7 +22,7 @@ export default function Architecture() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Arquitetura Técnica
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Infraestrutura robusta, segura e escalável. Dados privados e processamento local — sem dependências externas.
             </p>
           </div>
@@ -40,7 +40,7 @@ export default function Architecture() {
                 alt="Arquitetura Técnica IA BTELWAY" 
                 className="w-full rounded-lg"
               />
-              <p className="text-foreground/70 text-sm mt-6 text-center">
+              <p className="text-foreground/85 text-sm mt-6 text-center">
                 A orquestração gerencia as requisições e os nós com GPU processam a IA localmente. Um roteador inteligente decide, a cada pergunta, entre resposta privada (local) ou escalada externa quando não há dados sensíveis.
               </p>
             </Card>
@@ -55,11 +55,11 @@ export default function Architecture() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8 border border-border">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center mb-6">
                   <Server className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Control-Plane</h3>
-                <p className="text-foreground/70 mb-6">
+                <p className="text-foreground/85 mb-6">
                   <strong>Servidor Dell</strong> — Orquestração, interface e gerenciamento de IA.
                 </p>
                 <ul className="space-y-2 text-sm text-foreground/80">
@@ -77,7 +77,7 @@ export default function Architecture() {
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Nós de Inferência</h3>
-                <p className="text-foreground/70 mb-6">
+                <p className="text-foreground/85 mb-6">
                   <strong>Servidor com GPU</strong> — Executa os modelos de IA em tempo real.
                 </p>
                 <ul className="space-y-2 text-sm text-foreground/80">
@@ -148,7 +148,7 @@ export default function Architecture() {
                     <div>
                       <h4 className="font-bold text-foreground mb-1">{item.layer}</h4>
                       <p className="text-accent font-semibold text-sm mb-2">{item.tool}</p>
-                      <p className="text-foreground/70 text-sm">{item.desc}</p>
+                      <p className="text-foreground/85 text-sm">{item.desc}</p>
                     </div>
                   </div>
                 </Card>
@@ -184,11 +184,11 @@ export default function Architecture() {
                 const IconComponent = item.icon;
                 return (
                   <Card key={idx} className="p-8 border border-border">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-6">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-500 flex items-center justify-center mb-6">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-xl font-bold mb-3 text-foreground">{item.title}</h3>
-                    <p className="text-foreground/70">{item.desc}</p>
+                    <p className="text-foreground/85">{item.desc}</p>
                   </Card>
                 );
               })}
@@ -237,7 +237,7 @@ export default function Architecture() {
                     </div>
                     <div>
                       <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
-                      <p className="text-foreground/70">{item.desc}</p>
+                      <p className="text-foreground/85">{item.desc}</p>
                     </div>
                   </div>
                 ))}

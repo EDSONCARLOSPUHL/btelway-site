@@ -71,7 +71,7 @@ export default function UseCases() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Casos de Uso por Indústria
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Veja como diferentes setores transformam suas operações com IA privada.
             </p>
           </div>
@@ -91,7 +91,7 @@ export default function UseCases() {
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-foreground">{useCase.title}</h3>
-                        <p className="text-foreground/60 text-sm mt-1">{useCase.description}</p>
+                        <p className="text-foreground/80 text-sm mt-1">{useCase.description}</p>
                       </div>
                     </div>
                     <ul className="space-y-3">
@@ -115,7 +115,7 @@ export default function UseCases() {
             <h2 className="text-3xl font-bold mb-6 text-foreground">
               Seu caso de uso é diferente?
             </h2>
-            <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
+            <p className="text-foreground/85 mb-8 max-w-2xl mx-auto">
               Converse com nossos especialistas para encontrar a solução ideal para sua indústria.
             </p>
             <Link href="/contato">

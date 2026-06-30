@@ -31,7 +31,7 @@ export default function Security() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Segurança & Conformidade
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Segurança de nível empresarial, com as certificações que sua empresa precisa.
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function Security() {
                       <Icon className="w-8 h-8 text-accent" />
                     </div>
                     <h3 className="font-bold text-foreground mb-2">{cert.title}</h3>
-                    <p className="text-sm text-foreground/60">{cert.description}</p>
+                    <p className="text-sm text-foreground/80">{cert.description}</p>
                   </Card>
                 );
               })}

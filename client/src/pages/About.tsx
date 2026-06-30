@@ -83,12 +83,12 @@ export default function About() {
         <section className="relative py-24 px-4 bg-[#08160f] text-white overflow-hidden">
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,#22c55e,transparent_55%)]" />
           <div className="container relative">
-            <span className="inline-block text-green-400 font-semibold text-sm tracking-wide uppercase mb-4">
+            <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
               Quem Somos
             </span>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl leading-tight">
               Tecnologia a serviço da{" "}
-              <span className="text-green-400">soberania dos seus dados</span>.
+              <span className="text-green-500">soberania dos seus dados</span>.
             </h1>
             <p className="text-xl text-white/80 max-w-2xl">
               Nascemos para resolver um problema crítico: usar o poder da IA sem entregar dados
@@ -101,47 +101,47 @@ export default function About() {
         <section className="py-20 px-4">
           <div className="container grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+              <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
                 Nosso Propósito
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                 Trazer a IA de ponta para dentro da sua empresa.
               </h2>
-              <p className="text-foreground/70 mb-4 leading-relaxed">
+              <p className="text-foreground/85 mb-4 leading-relaxed">
                 A maioria das soluções de IA exige enviar documentos e dados de clientes para a
                 nuvem — um risco jurídico, financeiro e de imagem.
               </p>
-              <p className="text-foreground/70 leading-relaxed">
+              <p className="text-foreground/85 leading-relaxed">
                 Fazemos o contrário: IA privada, gerenciada e 100% LGPD. Autonomia de verdade — sem
                 depender de Big Techs e sem custos imprevisíveis.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <Card className="p-6 border border-border">
-                <Cpu className="w-8 h-8 text-green-600 mb-4" />
+                <Cpu className="w-8 h-8 text-green-500 mb-4" />
                 <h3 className="font-bold text-foreground mb-2">IA Privada</h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-foreground/85">
                   Modelos rodando localmente, dentro da sua infraestrutura.
                 </p>
               </Card>
               <Card className="p-6 border border-border mt-8">
-                <Lock className="w-8 h-8 text-green-600 mb-4" />
+                <Lock className="w-8 h-8 text-green-500 mb-4" />
                 <h3 className="font-bold text-foreground mb-2">Dados Seguros</h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-foreground/85">
                   Informações sensíveis nunca saem da sua empresa.
                 </p>
               </Card>
               <Card className="p-6 border border-border">
-                <ShieldCheck className="w-8 h-8 text-green-600 mb-4" />
+                <ShieldCheck className="w-8 h-8 text-green-500 mb-4" />
                 <h3 className="font-bold text-foreground mb-2">LGPD</h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-foreground/85">
                   Conformidade nativa com a proteção de dados.
                 </p>
               </Card>
               <Card className="p-6 border border-border mt-8">
-                <Server className="w-8 h-8 text-green-600 mb-4" />
+                <Server className="w-8 h-8 text-green-500 mb-4" />
                 <h3 className="font-bold text-foreground mb-2">Custo Fixo</h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-foreground/85">
                   Investimento previsível, sem cobrança por uso.
                 </p>
               </Card>
@@ -153,20 +153,20 @@ export default function About() {
         <section className="py-20 px-4 bg-muted/20 border-y border-border">
           <div className="container grid md:grid-cols-2 gap-8">
             <Card className="p-8 border border-border">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-500 flex items-center justify-center mb-6">
                 <Target className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Missão</h3>
-              <p className="text-foreground/70 leading-relaxed">
+              <p className="text-foreground/85 leading-relaxed">
 Levar IA de alto desempenho, privada e segura, a empresas de qualquer porte — com controle total dos dados.
               </p>
             </Card>
             <Card className="p-8 border border-border">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center mb-6">
                 <Eye className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Visão</h3>
-              <p className="text-foreground/70 leading-relaxed">
+              <p className="text-foreground/85 leading-relaxed">
 Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir mão da privacidade.
               </p>
             </Card>
@@ -177,7 +177,7 @@ Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir m�
         <section className="py-20 px-4">
           <div className="container">
             <div className="text-center mb-12">
-              <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+              <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
                 No que acreditamos
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -190,11 +190,11 @@ Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir m�
                 return (
                   <Card key={idx} className="p-8 border border-border flex gap-5">
                     <div className="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-green-600" />
+                      <Icon className="w-6 h-6 text-green-500" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-foreground mb-2">{valor.title}</h3>
-                      <p className="text-foreground/70 leading-relaxed">{valor.desc}</p>
+                      <p className="text-foreground/85 leading-relaxed">{valor.desc}</p>
                     </div>
                   </Card>
                 );
@@ -207,7 +207,7 @@ Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir m�
         <section className="py-20 px-4 bg-muted/20 border-y border-border">
           <div className="container">
             <div className="text-center mb-12">
-              <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+              <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
                 Como Trabalhamos
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -221,7 +221,7 @@ Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir m�
                     {item.step}
                   </span>
                   <h3 className="text-xl font-bold text-foreground mb-3 relative">{item.title}</h3>
-                  <p className="text-foreground/70 leading-relaxed relative">{item.desc}</p>
+                  <p className="text-foreground/85 leading-relaxed relative">{item.desc}</p>
                 </Card>
               ))}
             </div>
@@ -233,12 +233,12 @@ Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir m�
           <div className="container">
             <Card className="p-10 border border-border bg-gradient-to-br from-green-500/5 to-transparent">
               <div className="flex items-center gap-3 mb-6">
-                <Users className="w-7 h-7 text-green-600" />
+                <Users className="w-7 h-7 text-green-500" />
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                   Para quem trabalhamos
                 </h2>
               </div>
-              <p className="text-foreground/70 mb-6 max-w-3xl">
+              <p className="text-foreground/85 mb-6 max-w-3xl">
 Para quem leva a segurança da informação a sério e vê IA como vantagem competitiva.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -249,7 +249,7 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
                   "Quem busca autonomia e não dependência de Big Techs",
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <ShieldCheck className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <ShieldCheck className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                     <span className="text-foreground/80">{item}</span>
                   </div>
                 ))}
@@ -262,14 +262,14 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
         <section className="py-20 px-4">
           <div className="container">
             <div className="text-center mb-12">
-              <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+              <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
                 Liderança
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">O Fundador</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-green-500/20 to-cyan-500/10 rounded-3xl blur-2xl" />
+                <div className="absolute -inset-4 bg-gradient-to-br from-green-500/20 to-green-600/10 rounded-3xl blur-2xl" />
                 <img
                   src="/founder.webp"
                   alt="Edson Carlos Puhl, fundador da BTELWAY, ao lado de seu filho Samuel"
@@ -286,12 +286,12 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
                 <p className="text-green-500 font-semibold mb-6">
                   Fundador &middot; Engenheiro de Redes &middot; Investidor
                 </p>
-                <p className="text-foreground/70 leading-relaxed mb-4">
+                <p className="text-foreground/85 leading-relaxed mb-4">
                   Engenheiro de redes e operador de telecomunicações há 25 anos, Edson construiu e
                   manteve infraestrutura crítica em quatro estados — da fronteira gaúcha à Amazônia.
                   É essa veterania em redes de missão crítica que sustenta a engenharia da BTELWAY.
                 </p>
-                <p className="text-foreground/70 leading-relaxed mb-8">
+                <p className="text-foreground/85 leading-relaxed mb-8">
                   Investidor com formação em Value Investing, enxerga a IA privada como ativo
                   estratégico de longo prazo: soberania de dados, custo previsível e autonomia real,
                   sem dependência de Big Techs.
@@ -299,15 +299,15 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
                 <div className="grid grid-cols-3 gap-4">
                   <div className="flex flex-col items-center text-center gap-2 p-4 rounded-xl border border-border bg-white/[0.03]">
                     <Network className="w-6 h-6 text-green-500" />
-                    <span className="text-xs text-foreground/70">Engenharia de Redes</span>
+                    <span className="text-xs text-foreground/85">Engenharia de Redes</span>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2 p-4 rounded-xl border border-border bg-white/[0.03]">
                     <Server className="w-6 h-6 text-green-500" />
-                    <span className="text-xs text-foreground/70">25 anos em Telecom</span>
+                    <span className="text-xs text-foreground/85">25 anos em Telecom</span>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2 p-4 rounded-xl border border-border bg-white/[0.03]">
                     <TrendingUp className="w-6 h-6 text-green-500" />
-                    <span className="text-xs text-foreground/70">Value Investing</span>
+                    <span className="text-xs text-foreground/85">Value Investing</span>
                   </div>
                 </div>
               </div>
@@ -331,8 +331,8 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
                   <h3 className="font-bold text-foreground mb-1">
                     Empreendedor Destaque &amp; Mérito Empresarial
                   </h3>
-                  <p className="text-sm text-foreground/70 mb-2">Instituto Fênix</p>
-                  <div className="flex items-center gap-2 text-sm text-foreground/60">
+                  <p className="text-sm text-foreground/85 mb-2">Instituto Fênix</p>
+                  <div className="flex items-center gap-2 text-sm text-foreground/80">
                     <MapPin className="w-4 h-4 text-green-500" />
                     Ariquemes – RO &middot; 2018
                   </div>
@@ -346,8 +346,8 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
                   <h3 className="font-bold text-foreground mb-1">
                     Empreendedor Destaque &amp; Mérito Empresarial
                   </h3>
-                  <p className="text-sm text-foreground/70 mb-2">Instituto Fênix</p>
-                  <div className="flex items-center gap-2 text-sm text-foreground/60">
+                  <p className="text-sm text-foreground/85 mb-2">Instituto Fênix</p>
+                  <div className="flex items-center gap-2 text-sm text-foreground/80">
                     <MapPin className="w-4 h-4 text-green-500" />
                     Chapecó – SC &middot; 2020–2022
                   </div>

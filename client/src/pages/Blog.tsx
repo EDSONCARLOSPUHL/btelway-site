@@ -73,7 +73,7 @@ export default function Blog() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Blog & Recursos
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Artigos, guias e case studies sobre IA Privada, segurança e transformação digital.
             </p>
           </div>
@@ -89,13 +89,13 @@ export default function Blog() {
                     <span className="text-xs font-bold text-accent bg-accent/10 px-3 py-1 rounded-full">
                       {post.category}
                     </span>
-                    <span className="text-xs text-foreground/60">{post.readTime}</span>
+                    <span className="text-xs text-foreground/80">{post.readTime}</span>
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3 hover:text-accent transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-foreground/70 mb-6 text-sm">{post.excerpt}</p>
-                  <div className="flex items-center gap-4 text-xs text-foreground/60 border-t border-border pt-4">
+                  <p className="text-foreground/85 mb-6 text-sm">{post.excerpt}</p>
+                  <div className="flex items-center gap-4 text-xs text-foreground/80 border-t border-border pt-4">
                     <div className="flex items-center gap-1">
                       <User className="w-4 h-4" />
                       {post.author}
@@ -117,7 +117,7 @@ export default function Blog() {
             <h2 className="text-3xl font-bold mb-4 text-foreground text-center">
               Receba Novidades
             </h2>
-            <p className="text-foreground/70 text-center mb-8">
+            <p className="text-foreground/85 text-center mb-8">
               Inscreva-se para receber artigos, dicas e atualizações sobre IA Privada direto no seu email.
             </p>
             <div className="flex gap-2">

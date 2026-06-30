@@ -103,7 +103,7 @@ export default function Contact() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Vamos Conversar
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Fale com a gente e descubra como a IA privada transforma seu negócio.
             </p>
           </div>
@@ -187,7 +187,7 @@ export default function Contact() {
                       <Mail className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                        <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground/70 hover:text-accent transition-colors">
+                        <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground/85 hover:text-accent transition-colors">
                           {CONTACT_EMAIL}
                         </a>
                       </div>
@@ -199,7 +199,7 @@ export default function Contact() {
                       <Phone className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
-                        <a href="tel:+5554933806130" className="text-foreground/70 hover:text-accent transition-colors">
+                        <a href="tel:+5554933806130" className="text-foreground/85 hover:text-accent transition-colors">
                           +55 (54) 9 3380-6130
                         </a>
                       </div>
@@ -211,7 +211,7 @@ export default function Contact() {
                       <Clock className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Horário de Atendimento</h3>
-                        <p className="text-foreground/70 text-sm">
+                        <p className="text-foreground/85 text-sm">
                           Segunda a Sexta<br />
                           09:00 - 18:00 (Horário de Brasília)
                         </p>
@@ -221,7 +221,7 @@ export default function Contact() {
 
                   <Card className="p-6 border border-border bg-accent/5">
                     <h3 className="font-semibold text-foreground mb-3">Fale agora no WhatsApp</h3>
-                    <p className="text-foreground/70 text-sm mb-4">
+                    <p className="text-foreground/85 text-sm mb-4">
                       Prefere uma conversa rápida? Chame nosso time direto no WhatsApp.
                     </p>
                     <Button
@@ -247,19 +247,19 @@ export default function Contact() {
             <div className="max-w-2xl mx-auto space-y-4">
               <Card className="p-6 border border-border">
                 <h3 className="font-bold text-foreground mb-2">Qual é o tempo de implementação?</h3>
-                <p className="text-foreground/70 text-sm">
+                <p className="text-foreground/85 text-sm">
                   Normalmente entre 2-4 semanas, dependendo da complexidade da sua infraestrutura.
                 </p>
               </Card>
               <Card className="p-6 border border-border">
                 <h3 className="font-bold text-foreground mb-2">Vocês oferecem suporte técnico?</h3>
-                <p className="text-foreground/70 text-sm">
+                <p className="text-foreground/85 text-sm">
                   Sim, todos os planos incluem suporte. O plano Enterprise tem suporte 24/7.
                 </p>
               </Card>
               <Card className="p-6 border border-border">
                 <h3 className="font-bold text-foreground mb-2">Como funciona a migração?</h3>
-                <p className="text-foreground/70 text-sm">
+                <p className="text-foreground/85 text-sm">
                   Ajudamos com todo o processo, incluindo backup dos seus dados atuais.
                 </p>
               </Card>

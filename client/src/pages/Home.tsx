@@ -1,7 +1,7 @@
 /**
  * HOME — IA BTELWAY
  * Design philosophy: estrutura de alta conversão (inspirada na arquitetura da Redrive),
- * adaptada à identidade BTELway (verde esmeralda + cyan, fundo claro com seções dark pontuais).
+ * adaptada à identidade BTELway (verde único da marca, tema escuro contínuo com textura técnica).
  * Fluxo: Hero imersivo -> Agitação do problema -> Métricas -> Narrativa da solução
  *        -> Método em fases -> Comparação 2 caminhos -> Qualificador -> CTA final.
  * Sem depoimentos/logos fictícios (content policy). Provas reais: LGPD, tecnologias, princípios.
@@ -67,14 +67,14 @@ export default function Home() {
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/15 border border-green-400/30 rounded-full mb-8 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse-soft" />
-                <span className="text-green-300 text-sm font-semibold tracking-wide">
+                <span className="text-green-500 text-sm font-semibold tracking-wide">
                   INFRAESTRUTURA DE IA PRIVADA
                 </span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-[1.05]">
                 Sua IA.{" "}
-                <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent">
                   Seus dados.
                 </span>{" "}
                 Seu controle.
@@ -105,8 +105,8 @@ export default function Home() {
                 </Link>
               </div>
 
-              <p className="text-white/60 text-sm mt-8 flex items-center gap-2">
-                <Shield className="w-4 h-4 text-green-400" />
+              <p className="text-white/80 text-sm mt-8 flex items-center gap-2">
+                <Shield className="w-4 h-4 text-green-500" />
                 Para empresas que não podem terceirizar a segurança dos seus dados.
               </p>
             </div>
@@ -143,11 +143,11 @@ export default function Home() {
                     }`}
                   >
                     <div className="w-10 h-10 rounded-lg bg-green-500/10 border border-green-400/20 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-5 h-5 text-green-400" />
+                      <Icon className="w-5 h-5 text-green-500" />
                     </div>
                     <p className="text-sm md:text-[0.95rem] leading-tight">
                       <span className="font-bold text-white">{item.title}</span>{" "}
-                      <span className="text-white/60">{item.desc}</span>
+                      <span className="text-white/80">{item.desc}</span>
                     </p>
                   </div>
                 );
@@ -162,7 +162,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
                 Seus dados estão saindo pela porta.{" "}
-                <span className="text-green-400">E você nem percebe.</span>
+                <span className="text-green-500">E você nem percebe.</span>
               </h2>
               <p className="text-white/70 text-lg leading-relaxed">
                 Toda vez que a equipe usa IA pública, contratos e dados de clientes saem para fora.
@@ -200,16 +200,16 @@ export default function Home() {
                     className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-green-400/30 hover:bg-white/[0.06] transition-all"
                   >
                     <div className="w-12 h-12 rounded-xl bg-green-500/10 border border-green-400/20 flex items-center justify-center mb-5">
-                      <Icon className="w-6 h-6 text-green-400" />
+                      <Icon className="w-6 h-6 text-green-500" />
                     </div>
                     <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                    <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
+                    <p className="text-white/80 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 );
               })}
             </div>
 
-            <p className="text-center text-white/50 mt-12 text-lg">
+            <p className="text-center text-white/75 mt-12 text-lg">
               Não é falta de tecnologia. É falta de{" "}
               <span className="text-white font-semibold">infraestrutura própria.</span>
             </p>
@@ -231,10 +231,10 @@ export default function Home() {
                     key={stat.label}
                     className="p-6 text-center border border-green-500/20 bg-white/[0.04] shadow-xl shadow-green-900/20"
                   >
-                    <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent mb-1">
+                    <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-1">
                       {stat.value}
                     </p>
-                    <p className="text-foreground/60 text-sm">{stat.label}</p>
+                    <p className="text-foreground/80 text-sm">{stat.label}</p>
                   </Card>
                 ))}
               </div>
@@ -247,13 +247,13 @@ export default function Home() {
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div>
-                <span className="text-green-600 font-semibold text-sm tracking-wide uppercase">
+                <span className="text-green-500 font-semibold text-sm tracking-wide uppercase">
                   A solução
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-6 text-foreground leading-tight">
                   Existe um jeito de ter IA de ponta sem entregar seus dados.
                 </h2>
-                <p className="text-foreground/70 text-lg leading-relaxed mb-6">
+                <p className="text-foreground/85 text-lg leading-relaxed mb-6">
                   Instalamos uma IA privada dentro da sua empresa. Os modelos rodam local, os dados
                   ficam no seu ambiente e você paga valor fixo — sem cobrança por uso.
                 </p>
@@ -290,13 +290,13 @@ export default function Home() {
                   },
                   {
                     icon: Zap,
-                    color: "cyan",
+                    color: "green",
                     title: "Controle Completo",
                     desc: "Sua infraestrutura, suas regras. Sem dependência de terceiros.",
                   },
                   {
                     icon: TrendingUp,
-                    color: "emerald",
+                    color: "green",
                     title: "Custos Previsíveis",
                     desc: "Preço fixo mensal. Sem taxas por token, sem surpresas.",
                   },
@@ -307,12 +307,12 @@ export default function Home() {
                       key={pillar.title}
                       className="p-6 flex items-start gap-5 border border-border hover:border-green-400/40 hover:shadow-lg hover:shadow-green-500/10 transition-all bg-gradient-to-br from-background to-green-500/[0.03]"
                     >
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-cyan-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-500/20">
+                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-500/20">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <h3 className="font-bold text-lg text-foreground mb-1">{pillar.title}</h3>
-                        <p className="text-foreground/65 text-sm leading-relaxed">{pillar.desc}</p>
+                        <p className="text-foreground/80 text-sm leading-relaxed">{pillar.desc}</p>
                       </div>
                     </Card>
                   );
@@ -323,16 +323,16 @@ export default function Home() {
         </section>
 
         {/* ========================= MÉTODO EM FASES ========================= */}
-        <section className="py-20 md:py-28 px-4 bg-gradient-to-b from-accent/[0.04] to-background border-y border-border">
+        <section className="py-20 md:py-28 px-4 bg-gradient-to-b from-green-950/30 to-background border-y border-border">
           <div className="container">
             <div className="text-center mb-16 max-w-2xl mx-auto">
-              <span className="text-green-600 font-semibold text-sm tracking-wide uppercase">
+              <span className="text-green-500 font-semibold text-sm tracking-wide uppercase">
                 Como funciona
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">
                 IA privada implantada em 3 etapas
               </h2>
-              <p className="text-foreground/65 mt-4 text-lg">
+              <p className="text-foreground/80 mt-4 text-lg">
                 Processo claro. A parte técnica fica com a gente.
               </p>
             </div>
@@ -367,15 +367,15 @@ export default function Home() {
                     <Card className="p-8 h-full border border-border hover:border-green-400/40 hover:shadow-xl hover:shadow-green-500/10 transition-all">
                       <div className="flex items-center justify-between mb-6">
                         <span className="text-5xl font-bold text-green-500/15">{step.num}</span>
-                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-green-500/20">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg shadow-green-500/20">
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                       </div>
-                      <span className="text-green-600 text-xs font-semibold tracking-wide uppercase">
+                      <span className="text-green-500 text-xs font-semibold tracking-wide uppercase">
                         {step.phase}
                       </span>
                       <h3 className="text-xl font-bold text-foreground mt-1 mb-3">{step.title}</h3>
-                      <p className="text-foreground/65 text-sm leading-relaxed">{step.desc}</p>
+                      <p className="text-foreground/80 text-sm leading-relaxed">{step.desc}</p>
                     </Card>
                   </div>
                 );
@@ -391,19 +391,19 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                 Você tem duas escolhas agora
               </h2>
-              <p className="text-foreground/65 mt-4 text-lg">
+              <p className="text-foreground/80 mt-4 text-lg">
                 O caminho da exposição ou o caminho do controle.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {/* Caminho 1 */}
-              <Card className="p-8 border border-border bg-muted/30 relative">
+              <Card className="p-8 border border-white/10 bg-white/[0.03] relative">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-foreground/5 flex items-center justify-center">
-                    <Cloud className="w-6 h-6 text-foreground/40" />
+                  <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center">
+                    <Cloud className="w-6 h-6 text-white/60" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground/70">IA Pública na Nuvem</h3>
+                  <h3 className="text-xl font-bold text-white/85">IA Pública na Nuvem</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
@@ -414,19 +414,19 @@ export default function Home() {
                   ].map((line) => (
                     <li key={line} className="flex items-start gap-3">
                       <XCircle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-foreground/55">{line}</span>
+                      <span className="text-white/70">{line}</span>
                     </li>
                   ))}
                 </ul>
               </Card>
 
               {/* Caminho 2 */}
-              <Card className="p-8 border-2 border-green-500/40 bg-gradient-to-br from-green-500/[0.06] to-cyan-500/[0.04] relative shadow-xl shadow-green-500/10">
+              <Card className="p-8 border-2 border-green-500/40 bg-gradient-to-br from-green-500/[0.06] to-green-500/[0.04] relative shadow-xl shadow-green-500/10">
                 <div className="absolute -top-3 right-6 px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">
                   Recomendado
                 </div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-green-500/20">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg shadow-green-500/20">
                     <Server className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground">IA Privada BTELWAY</h3>
@@ -455,13 +455,13 @@ export default function Home() {
         </section>
 
         {/* ========================= INDÚSTRIAS ========================= */}
-        <section className="py-20 md:py-24 px-4 bg-gradient-to-b from-background to-accent/[0.04] border-t border-border">
+        <section className="py-20 md:py-24 px-4 bg-gradient-to-b from-background to-green-950/30 border-t border-border">
           <div className="container">
             <div className="text-center mb-14 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                 Feito para setores onde dado é ativo crítico
               </h2>
-              <p className="text-foreground/65 mt-4 text-lg">
+              <p className="text-foreground/80 mt-4 text-lg">
                 Privacidade em primeiro lugar, em todo segmento.
               </p>
             </div>
@@ -478,8 +478,8 @@ export default function Home() {
                     key={ind.name}
                     className="p-8 border border-border hover:border-green-400/50 transition-all text-center hover:shadow-lg hover:shadow-green-500/10 group"
                   >
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500/10 to-cyan-500/10 border border-green-400/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
-                      <Icon className="w-7 h-7 text-green-600" />
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500/10 to-green-600/10 border border-green-400/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
+                      <Icon className="w-7 h-7 text-green-500" />
                     </div>
                     <p className="font-bold text-foreground">{ind.name}</p>
                   </Card>
@@ -494,12 +494,12 @@ export default function Home() {
           <div className="container">
             <Card className="max-w-4xl mx-auto p-8 md:p-12 border border-green-500/20 bg-gradient-to-br from-green-500/[0.04] to-transparent">
               <div className="flex items-center gap-3 mb-6">
-                <Cpu className="w-7 h-7 text-green-600" />
+                <Cpu className="w-7 h-7 text-green-500" />
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                   A IA BTELWAY não é para todos.
                 </h2>
               </div>
-              <p className="text-foreground/70 text-lg mb-8 leading-relaxed">
+              <p className="text-foreground/85 text-lg mb-8 leading-relaxed">
                 Trabalhamos com quem leva segurança da informação a sério e vê IA como vantagem
                 competitiva — não como brinquedo.
               </p>
@@ -527,7 +527,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-[#04140c]" />
               <div className="absolute inset-0 opacity-40">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-green-500 rounded-full blur-3xl opacity-30" />
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500 rounded-full blur-3xl opacity-20" />
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-green-600 rounded-full blur-3xl opacity-20" />
               </div>
               <div className="relative z-10 text-center px-6 py-16 md:py-20">
                 <h2 className="text-3xl md:text-5xl font-bold mb-5 text-white leading-tight">
@@ -556,7 +556,7 @@ export default function Home() {
                     </Button>
                   </a>
                 </div>
-                <p className="text-white/50 text-sm mt-6">
+                <p className="text-white/75 text-sm mt-6">
                   Sem pressão, sem truques. Só uma conversa estratégica.
                 </p>
               </div>

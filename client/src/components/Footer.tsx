@@ -33,14 +33,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <img
-                src="/btelway-logo.png"
-                alt="BTELway"
-                className="h-11 w-auto bg-white rounded-md p-1"
-              />
-              <span className="font-bold text-lg">IA BTELWAY</span>
-            </div>
+            <img
+              src="/logo-btelway-full.png"
+              alt="BTELway — Faça parte desta família"
+              className="h-24 w-auto"
+            />
             <p className="text-white/70 text-sm leading-relaxed">
               Infraestrutura de IA privada para empresas que não podem terceirizar a segurança dos seus dados.
             </p>
@@ -49,14 +46,14 @@ export default function Footer() {
                 href="mailto:edsonpuhl@gmail.com"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
               >
-                <Mail className="w-4 h-4 text-green-400" />
+                <Mail className="w-4 h-4 text-green-500" />
                 edsonpuhl@gmail.com
               </a>
               <a
                 href="tel:+5554933806130"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
               >
-                <Phone className="w-4 h-4 text-green-400" />
+                <Phone className="w-4 h-4 text-green-500" />
                 +55 (54) 9 3380-6130
               </a>
               <a
@@ -65,7 +62,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
               >
-                <MessageCircle className="w-4 h-4 text-green-400" />
+                <MessageCircle className="w-4 h-4 text-green-500" />
                 Falar no WhatsApp
               </a>
             </div>

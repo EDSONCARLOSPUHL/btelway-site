@@ -26,7 +26,7 @@ export default function Services() {
         "Suporte técnico especializado",
         "Relatórios de segurança mensais",
       ],
-      color: "from-cyan-500 to-blue-500",
+      color: "from-green-500 to-green-600",
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ export default function Services() {
         "Backup automático de dados e configurações",
         "Escalabilidade conforme sua demanda cresce",
       ],
-      color: "from-green-500 to-emerald-500",
+      color: "from-green-500 to-green-500",
     },
   ];
 
@@ -118,13 +118,13 @@ export default function Services() {
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">
           <div className="container">
-            <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+            <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
               Serviços & Planos
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Serviços e Investimento
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Três níveis — da segurança de rede à IA privada completa. Custo fixo e previsível.
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function Services() {
         <section className="py-20 px-4">
           <div className="container">
             <h2 className="text-3xl font-bold mb-4 text-foreground">O que entregamos</h2>
-            <p className="text-foreground/60 mb-12 max-w-2xl">
+            <p className="text-foreground/80 mb-12 max-w-2xl">
               Tudo gerenciado de ponta a ponta. Você foca no negócio, nós na infraestrutura.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
@@ -151,11 +151,11 @@ export default function Services() {
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-foreground">{service.title}</h3>
-                    <p className="text-foreground/70 mb-6">{service.description}</p>
+                    <p className="text-foreground/85 mb-6">{service.description}</p>
                     <ul className="space-y-3 mb-8 flex-1">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                           <span className="text-foreground/80 text-sm">{feature}</span>
                         </li>
                       ))}
@@ -197,21 +197,21 @@ export default function Services() {
                       <td className="py-4 px-4 text-foreground">{row.feature}</td>
                       <td className="py-4 px-4 text-center">
                         {row.mikrotik ? (
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" />
+                          <CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" />
                         ) : (
                           <span className="text-foreground/30">—</span>
                         )}
                       </td>
                       <td className="py-4 px-4 text-center">
                         {row.ia ? (
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" />
+                          <CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" />
                         ) : (
                           <span className="text-foreground/30">—</span>
                         )}
                       </td>
                       <td className="py-4 px-4 text-center">
                         {row.combo ? (
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" />
+                          <CheckCircle2 className="w-5 h-5 text-green-500 mx-auto" />
                         ) : (
                           <span className="text-foreground/30">—</span>
                         )}
@@ -228,13 +228,13 @@ export default function Services() {
         <section className="py-20 px-4">
           <div className="container">
             <div className="text-center mb-12">
-              <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+              <span className="inline-block text-green-500 font-semibold text-sm tracking-wide uppercase mb-4">
                 Planos
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Investimento sob medida
               </h2>
-              <p className="text-foreground/70 max-w-2xl mx-auto">
+              <p className="text-foreground/85 max-w-2xl mx-auto">
                 O valor é definido após um diagnóstico gratuito. Sem taxas ocultas, custo mensal
                 previsível.
               </p>
@@ -255,15 +255,15 @@ export default function Services() {
                     </div>
                   )}
                   <h3 className="text-2xl font-bold text-foreground mb-2">{plan.name}</h3>
-                  <p className="text-foreground/60 text-sm mb-6">{plan.description}</p>
+                  <p className="text-foreground/80 text-sm mb-6">{plan.description}</p>
                   <div className="mb-8">
                     <span className="text-3xl font-bold text-foreground">{plan.price}</span>
-                    {plan.period && <span className="text-foreground/60">{plan.period}</span>}
+                    {plan.period && <span className="text-foreground/80">{plan.period}</span>}
                   </div>
                   <ul className="space-y-3 mb-8 flex-1">
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                         <span className="text-foreground/80 text-sm">{feature}</span>
                       </li>
                     ))}
@@ -295,7 +295,7 @@ export default function Services() {
             <div className="max-w-2xl mx-auto space-y-6">
               <Card className="p-6 border border-border">
                 <h3 className="font-bold text-foreground mb-2">Como é definido o valor?</h3>
-                <p className="text-foreground/70 text-sm">
+                <p className="text-foreground/85 text-sm">
                   Após um diagnóstico gratuito, montamos uma proposta com custo mensal fixo, sem
                   cobrança por uso.
                 </p>
@@ -304,13 +304,13 @@ export default function Services() {
                 <h3 className="font-bold text-foreground mb-2">
                   Meus dados saem da minha empresa?
                 </h3>
-                <p className="text-foreground/70 text-sm">
+                <p className="text-foreground/85 text-sm">
                   Não. Os modelos rodam localmente. Dados sensíveis nunca vão para terceiros.
                 </p>
               </Card>
               <Card className="p-6 border border-border">
                 <h3 className="font-bold text-foreground mb-2">Posso começar só com a rede?</h3>
-                <p className="text-foreground/70 text-sm">
+                <p className="text-foreground/85 text-sm">
                   Sim. Comece pela Rede Gerenciada e evolua para IA Privada ou Combo quando quiser.
                 </p>
               </Card>
@@ -324,7 +324,7 @@ export default function Services() {
             <h2 className="text-4xl font-bold mb-6 text-foreground">
               Qual é a melhor solução para você?
             </h2>
-            <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/85 mb-8 max-w-2xl mx-auto">
               Fale com a gente e receba um diagnóstico gratuito.
             </p>
             <Link href="/contato">

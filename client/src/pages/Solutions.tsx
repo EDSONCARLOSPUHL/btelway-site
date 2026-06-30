@@ -19,7 +19,7 @@ export default function Solutions() {
         "Zero dependência de APIs externas",
         "Análise de documentos confidenciais"
       ],
-      color: "from-cyan-500 to-blue-500"
+      color: "from-green-500 to-green-600"
     },
     {
       icon: Shield,
@@ -43,7 +43,7 @@ export default function Solutions() {
         "Aprendizado contínuo",
         "ROI comprovado em 6 meses"
       ],
-      color: "from-green-500 to-emerald-500"
+      color: "from-green-500 to-green-500"
     }
   ];
 
@@ -63,7 +63,7 @@ export default function Solutions() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Soluções Completas de IA Privada
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Três pilares que transformam sua operação: privacidade total, controle absoluto e custos previsíveis.
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function Solutions() {
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-foreground">{solution.title}</h3>
-                    <p className="text-foreground/70 mb-6">{solution.description}</p>
+                    <p className="text-foreground/85 mb-6">{solution.description}</p>
                     <ul className="space-y-3">
                       {solution.benefits.map((benefit, i) => (
                         <li key={i} className="flex items-start gap-3">

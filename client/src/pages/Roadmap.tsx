@@ -25,7 +25,7 @@ export default function Roadmap() {
         "Backup e disaster recovery",
       ],
       timeline: "Junho - Julho 2026",
-      color: "from-cyan-500 to-blue-500",
+      color: "from-green-500 to-green-600",
     },
     {
       phase: 2,
@@ -57,7 +57,7 @@ export default function Roadmap() {
         "SLA de cliente com garantias",
       ],
       timeline: "Outubro 2026+",
-      color: "from-green-500 to-emerald-500",
+      color: "from-green-500 to-green-500",
     },
   ];
 
@@ -77,7 +77,7 @@ export default function Roadmap() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Roadmap de Implantação
             </h1>
-            <p className="text-xl text-foreground/70 max-w-2xl">
+            <p className="text-xl text-foreground/85 max-w-2xl">
               Três fases: do núcleo de IA à escala. Crescimento puxado pela demanda, não pelo capital.
             </p>
           </div>
@@ -102,12 +102,12 @@ export default function Roadmap() {
                               ? "bg-accent/20 text-accent"
                               : phase.status === "Planejado"
                               ? "bg-blue-500/20 text-blue-400"
-                              : "bg-foreground/10 text-foreground/70"
+                              : "bg-foreground/10 text-foreground/85"
                           }`}>
                             {phase.status}
                           </span>
                         </div>
-                        <p className="text-foreground/70 mb-6">{phase.timeline}</p>
+                        <p className="text-foreground/85 mb-6">{phase.timeline}</p>
 
                         <div className="grid md:grid-cols-2 gap-8">
                           <div>
@@ -136,7 +136,7 @@ export default function Roadmap() {
                             </h4>
                             <ul className="space-y-2">
                               {phase.pending.map((item, i) => (
-                                <li key={i} className="flex items-start gap-2 text-foreground/70 text-sm">
+                                <li key={i} className="flex items-start gap-2 text-foreground/85 text-sm">
                                   <Circle className="w-4 h-4 text-foreground/40 flex-shrink-0 mt-0.5" />
                                   {item}
                                 </li>
@@ -216,7 +216,7 @@ export default function Roadmap() {
               ].map((item, idx) => (
                 <Card key={idx} className="p-6 border border-border">
                   <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
-                  <p className="text-foreground/70 text-sm">{item.desc}</p>
+                  <p className="text-foreground/85 text-sm">{item.desc}</p>
                 </Card>
               ))}
             </div>
