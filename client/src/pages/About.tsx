@@ -19,6 +19,10 @@ import {
   ArrowRight,
   Cpu,
   Users,
+  Award,
+  Network,
+  TrendingUp,
+  MapPin,
 } from "lucide-react";
 
 export default function About() {
@@ -243,6 +247,105 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
                 ))}
               </div>
             </Card>
+          </div>
+        </section>
+
+        {/* O Fundador */}
+        <section className="py-20 px-4">
+          <div className="container">
+            <div className="text-center mb-12">
+              <span className="inline-block text-green-600 font-semibold text-sm tracking-wide uppercase mb-4">
+                Liderança
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">O Fundador</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-green-500/20 to-cyan-500/10 rounded-3xl blur-2xl" />
+                <img
+                  src="/founder.webp"
+                  alt="Edson Carlos Puhl, fundador da BTELWAY, ao lado de seu filho Samuel"
+                  className="relative w-full rounded-2xl border border-green-500/20 shadow-2xl shadow-green-900/30"
+                />
+                <p className="relative text-center text-foreground/50 text-sm mt-4">
+                  Edson Carlos Puhl e seu filho Samuel.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                  Edson Carlos Puhl
+                </h3>
+                <p className="text-green-500 font-semibold mb-6">
+                  Fundador &middot; Engenheiro de Redes &middot; Investidor
+                </p>
+                <p className="text-foreground/70 leading-relaxed mb-4">
+                  Engenheiro de redes e operador de telecomunicações há 25 anos, Edson construiu e
+                  manteve infraestrutura crítica em quatro estados — da fronteira gaúcha à Amazônia.
+                  É essa veterania em redes de missão crítica que sustenta a engenharia da BTELWAY.
+                </p>
+                <p className="text-foreground/70 leading-relaxed mb-8">
+                  Investidor com formação em Value Investing, enxerga a IA privada como ativo
+                  estratégico de longo prazo: soberania de dados, custo previsível e autonomia real,
+                  sem dependência de Big Techs.
+                </p>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="flex flex-col items-center text-center gap-2 p-4 rounded-xl border border-border bg-white/[0.03]">
+                    <Network className="w-6 h-6 text-green-500" />
+                    <span className="text-xs text-foreground/70">Engenharia de Redes</span>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2 p-4 rounded-xl border border-border bg-white/[0.03]">
+                    <Server className="w-6 h-6 text-green-500" />
+                    <span className="text-xs text-foreground/70">25 anos em Telecom</span>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2 p-4 rounded-xl border border-border bg-white/[0.03]">
+                    <TrendingUp className="w-6 h-6 text-green-500" />
+                    <span className="text-xs text-foreground/70">Value Investing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Reconhecimentos */}
+        <section className="py-16 px-4 bg-muted/40 border-y border-border">
+          <div className="container">
+            <div className="flex items-center justify-center gap-3 mb-10">
+              <Award className="w-6 h-6 text-green-500" />
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Reconhecimentos</h2>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Card className="p-6 border border-border flex items-start gap-4 bg-white/[0.03]">
+                <div className="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Award className="w-6 h-6 text-green-500" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-foreground mb-1">
+                    Empreendedor Destaque &amp; Mérito Empresarial
+                  </h3>
+                  <p className="text-sm text-foreground/70 mb-2">Instituto Fênix</p>
+                  <div className="flex items-center gap-2 text-sm text-foreground/60">
+                    <MapPin className="w-4 h-4 text-green-500" />
+                    Ariquemes – RO &middot; 2018
+                  </div>
+                </div>
+              </Card>
+              <Card className="p-6 border border-border flex items-start gap-4 bg-white/[0.03]">
+                <div className="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Award className="w-6 h-6 text-green-500" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-foreground mb-1">
+                    Empreendedor Destaque &amp; Mérito Empresarial
+                  </h3>
+                  <p className="text-sm text-foreground/70 mb-2">Instituto Fênix</p>
+                  <div className="flex items-center gap-2 text-sm text-foreground/60">
+                    <MapPin className="w-4 h-4 text-green-500" />
+                    Chapecó – SC &middot; 2020–2022
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </section>
 
