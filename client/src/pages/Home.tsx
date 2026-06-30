@@ -8,6 +8,7 @@
  */
 import { Link } from "wouter";
 import Header from "@/components/Header";
+import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -42,6 +43,11 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
+      <Seo
+        title="IA BTELWAY - IA Privada e Soberana para Empresas | LGPD"
+        description="Inteligência artificial privada e soberana rodando na sua própria infraestrutura. Custo fixo, dados protegidos e 100% em conformidade com a LGPD."
+        path="/"
+      />
       <main className="flex-1">
         {/* ========================= HERO ========================= */}
         <section className="relative px-4 pt-28 pb-24 md:pt-36 md:pb-32 overflow-hidden">

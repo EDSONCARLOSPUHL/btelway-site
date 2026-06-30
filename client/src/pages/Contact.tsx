@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -88,6 +89,11 @@ export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
+      <Seo
+        title="Contato | IA BTELWAY - IA Privada e Soberana"
+        description="Fale com a BTELWAY e descubra como implantar IA privada e soberana na sua empresa, com custo fixo e conformidade com a LGPD."
+        path="/contato"
+      />
       <main className="flex-1 pt-16">
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">

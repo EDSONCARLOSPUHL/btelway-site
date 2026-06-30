@@ -5,6 +5,7 @@
  */
 import { Link } from "wouter";
 import Header from "@/components/Header";
+import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -106,6 +107,11 @@ export default function Services() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
+      <Seo
+        title="Serviços e Planos | IA BTELWAY - IA Privada e Soberana"
+        description="Rede gerenciada, IA privada e combo gerenciado. Infraestrutura de IA soberana com custo fixo, dados protegidos e conformidade com a LGPD."
+        path="/servicos"
+      />
       <main className="flex-1 pt-16">
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">

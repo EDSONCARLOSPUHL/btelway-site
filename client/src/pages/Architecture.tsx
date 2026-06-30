@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Server, Database, Shield, Zap, Network, Code } from "lucide-react";
@@ -7,6 +8,11 @@ export default function Architecture() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
+      <Seo
+        title="Arquitetura | IA BTELWAY - IA Privada e Soberana"
+        description="A arquitetura da IA privada BTELWAY: infraestrutura dedicada e segura, dados que nunca saem da sua empresa e conformidade nativa com a LGPD."
+        path="/arquitetura"
+      />
       <main className="flex-1 pt-16">
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">

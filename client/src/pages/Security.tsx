@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import Header from "@/components/Header";
+import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -16,6 +17,11 @@ export default function Security() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
+      <Seo
+        title="Segurança | IA BTELWAY - IA Privada e Soberana"
+        description="Segurança e soberania de dados na IA privada BTELWAY: suas informações nunca saem da empresa, com conformidade total com a LGPD."
+        path="/seguranca"
+      />
       <main className="flex-1 pt-16">
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">

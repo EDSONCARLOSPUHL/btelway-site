@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Circle, ArrowRight } from "lucide-react";
@@ -62,6 +63,11 @@ export default function Roadmap() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
+      <Seo
+        title="Roadmap | IA BTELWAY - IA Privada e Soberana"
+        description="O roteiro de evolução da IA privada e soberana da BTELWAY: capacidades planejadas com foco em segurança de dados e conformidade com a LGPD."
+        path="/roadmap"
+      />
       <main className="flex-1 pt-16">
         {/* Hero */}
         <section className="py-20 px-4 border-b border-border">
