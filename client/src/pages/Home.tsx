@@ -29,6 +29,9 @@ import {
   Stethoscope,
   ShoppingCart,
   Factory,
+  Award,
+  MapPin,
+  BadgeCheck,
 } from "lucide-react";
 
 const WHATSAPP_URL =
@@ -100,6 +103,49 @@ export default function Home() {
                 <Shield className="w-4 h-4 text-green-400" />
                 Para empresas que não podem terceirizar a segurança dos seus dados.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================= PROVA SOCIAL (1ª dobra) ========================= */}
+        <section className="bg-[#04140c] border-y border-green-500/15 px-4 py-6 md:py-7">
+          <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-4">
+              {[
+                {
+                  icon: Award,
+                  title: "25 anos",
+                  desc: "de infraestrutura crítica",
+                },
+                {
+                  icon: MapPin,
+                  title: "4 estados",
+                  desc: "da fronteira gaúcha à Amazônia",
+                },
+                {
+                  icon: BadgeCheck,
+                  title: "Reconhecida",
+                  desc: "em RO e SC",
+                },
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.title}
+                    className={`flex items-center justify-center gap-3 text-center md:text-left ${
+                      i < 2 ? "md:border-r md:border-green-500/15" : ""
+                    }`}
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-green-500/10 border border-green-400/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-5 h-5 text-green-400" />
+                    </div>
+                    <p className="text-sm md:text-[0.95rem] leading-tight">
+                      <span className="font-bold text-white">{item.title}</span>{" "}
+                      <span className="text-white/60">{item.desc}</span>
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
