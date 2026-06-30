@@ -8,7 +8,7 @@ export default function TechBackground() {
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden">
       {/* Degradê base: escuro -> tom levemente azulado-esverdeado */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#04140c] via-[#06180f] to-[#04120e]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#11271b] via-[#0e2417] to-[#0c2014]" />
 
       {/* Brilhos radiais discretos (verde da marca) para dar profundidade */}
       <div

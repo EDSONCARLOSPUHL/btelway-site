@@ -114,7 +114,7 @@ export default function Home() {
         </section>
 
         {/* ========================= PROVA SOCIAL (1ª dobra) ========================= */}
-        <section className="bg-[#04140c] border-y border-green-500/15 px-4 py-6 md:py-7">
+        <section className="bg-[#0e261a] border-y border-green-500/15 px-4 py-6 md:py-7">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-4">
               {[
@@ -157,7 +157,7 @@ export default function Home() {
         </section>
 
         {/* ========================= AGITAÇÃO DO PROBLEMA ========================= */}
-        <section className="py-20 md:py-28 px-4 bg-[#04140c] text-white relative">
+        <section className="py-20 md:py-28 px-4 bg-[#0e261a] text-white relative">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
@@ -197,7 +197,7 @@ export default function Home() {
                 return (
                   <div
                     key={item.title}
-                    className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-green-400/30 hover:bg-white/[0.06] transition-all"
+                    className="p-6 rounded-2xl bg-white/[0.06] border border-white/10 hover:border-green-400/30 hover:bg-white/[0.1] transition-all"
                   >
                     <div className="w-12 h-12 rounded-xl bg-green-500/10 border border-green-400/20 flex items-center justify-center mb-5">
                       <Icon className="w-6 h-6 text-green-500" />
@@ -229,12 +229,12 @@ export default function Home() {
                 ].map((stat) => (
                   <Card
                     key={stat.label}
-                    className="p-6 text-center border border-green-500/20 bg-white/[0.04] shadow-xl shadow-green-900/20"
+                    className="p-6 text-center border border-green-500/20 bg-white/[0.07] shadow-xl shadow-green-900/20"
                   >
                     <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent mb-1">
                       {stat.value}
                     </p>
-                    <p className="text-foreground/80 text-sm">{stat.label}</p>
+                    <p className="text-white/85 text-sm">{stat.label}</p>
                   </Card>
                 ))}
               </div>
@@ -312,7 +312,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="font-bold text-lg text-foreground mb-1">{pillar.title}</h3>
-                        <p className="text-foreground/80 text-sm leading-relaxed">{pillar.desc}</p>
+                        <p className="text-white/80 text-sm leading-relaxed">{pillar.desc}</p>
                       </div>
                     </Card>
                   );
@@ -375,7 +375,7 @@ export default function Home() {
                         {step.phase}
                       </span>
                       <h3 className="text-xl font-bold text-foreground mt-1 mb-3">{step.title}</h3>
-                      <p className="text-foreground/80 text-sm leading-relaxed">{step.desc}</p>
+                      <p className="text-white/80 text-sm leading-relaxed">{step.desc}</p>
                     </Card>
                   </div>
                 );
@@ -398,7 +398,7 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {/* Caminho 1 */}
-              <Card className="p-8 border border-white/10 bg-white/[0.03] relative">
+              <Card className="p-8 border border-white/10 bg-white/[0.06] relative">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center">
                     <Cloud className="w-6 h-6 text-white/60" />
