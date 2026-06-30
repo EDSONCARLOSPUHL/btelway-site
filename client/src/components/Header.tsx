@@ -44,9 +44,9 @@ export default function Header() {
         { label: "Casos de Uso", href: "/casos-de-uso" },
         { label: "Arquitetura", href: "/arquitetura" },
         { label: "Segurança", href: "/seguranca" },
-        { label: "Serviços", href: "/servicos" },
       ],
     },
+    { label: "Serviços", href: "/servicos" },
     { label: "Blog", href: "/blog" },
     { label: "Contato", href: "/contato" },
   ];
