@@ -68,7 +68,7 @@ export default function About() {
       <Header />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="relative py-24 px-4 bg-primary text-white overflow-hidden">
+        <section className="relative py-24 px-4 bg-[#08160f] text-white overflow-hidden">
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_30%,#22c55e,transparent_55%)]" />
           <div className="container relative">
             <span className="inline-block text-green-400 font-semibold text-sm tracking-wide uppercase mb-4">
@@ -247,7 +247,8 @@ Para quem leva a segurança da informação a sério e vê IA como vantagem comp
         </section>
 
         {/* CTA Final */}
-        <section className="py-20 px-4 bg-primary text-white">
+        <section className="relative py-20 px-4 bg-[#08160f] text-white overflow-hidden">
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_70%_50%,#22c55e,transparent_55%)]" />
           <div className="container text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Vamos trazer a sua IA para casa?

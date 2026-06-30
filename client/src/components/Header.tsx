@@ -63,14 +63,14 @@ export default function Header() {
 
   const solid = scrolled || mobileMenuOpen || !isHome;
   const linkColor = solid
-    ? "text-foreground/70 hover:text-green-600"
+    ? "text-white/75 hover:text-green-400"
     : "text-white/80 hover:text-white";
 
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         solid
-          ? "bg-white/95 backdrop-blur-md border-b border-border shadow-sm"
+          ? "bg-[#08160f]/95 backdrop-blur-md border-b border-green-500/15 shadow-sm shadow-black/30"
           : "bg-transparent border-b border-transparent"
       }`}
     >
@@ -83,9 +83,7 @@ export default function Header() {
             className="h-10 w-auto transition-transform group-hover:scale-105"
           />
           <span
-            className={`font-bold text-lg hidden sm:inline transition-colors ${
-              solid ? "text-primary" : "text-white"
-            }`}
+            className="font-bold text-lg hidden sm:inline transition-colors text-white"
           >
             IA BTELWAY
           </span>
@@ -122,12 +120,12 @@ export default function Header() {
                       : "opacity-0 invisible -translate-y-1 pointer-events-none"
                   }`}
                 >
-                  <div className="min-w-[200px] rounded-xl bg-white border border-border shadow-xl shadow-black/5 p-2">
+                  <div className="min-w-[200px] rounded-xl bg-[#0c1f15] border border-green-500/15 shadow-xl shadow-black/40 p-2">
                     {entry.items.map((item) => (
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="block text-sm font-medium text-foreground/80 hover:text-green-600 hover:bg-green-500/5 transition-colors rounded-lg px-3 py-2.5"
+                        className="block text-sm font-medium text-white/75 hover:text-green-400 hover:bg-green-500/10 transition-colors rounded-lg px-3 py-2.5"
                       >
                         {item.label}
                       </Link>
@@ -159,9 +157,7 @@ export default function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={`lg:hidden p-2 rounded-lg transition-colors ${
-            solid ? "hover:bg-muted text-foreground" : "hover:bg-white/10 text-white"
-          }`}
+          className="lg:hidden p-2 rounded-lg transition-colors hover:bg-white/10 text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Abrir menu"
         >
@@ -171,13 +167,13 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-border bg-white">
+        <div className="lg:hidden border-t border-green-500/15 bg-[#08160f]">
           <nav className="container py-4 flex flex-col gap-1">
             {navEntries.map((entry) =>
               isGroup(entry) ? (
                 <div key={entry.label}>
                   <button
-                    className="w-full flex items-center justify-between text-sm font-semibold text-foreground hover:text-green-600 hover:bg-muted/50 transition-colors py-3 px-2 rounded-lg"
+                    className="w-full flex items-center justify-between text-sm font-semibold text-white hover:text-green-400 hover:bg-white/5 transition-colors py-3 px-2 rounded-lg"
                     onClick={() =>
                       setOpenMobile((cur) => (cur === entry.label ? null : entry.label))
                     }
@@ -196,7 +192,7 @@ export default function Header() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="text-sm font-medium text-foreground/70 hover:text-green-600 hover:bg-muted/50 transition-colors py-2.5 px-2 rounded-lg"
+                          className="text-sm font-medium text-white/65 hover:text-green-400 hover:bg-white/5 transition-colors py-2.5 px-2 rounded-lg"
                           onClick={closeMobile}
                         >
                           {item.label}
@@ -209,7 +205,7 @@ export default function Header() {
                 <Link
                   key={entry.label}
                   href={entry.href}
-                  className="text-sm font-semibold text-foreground hover:text-green-600 hover:bg-muted/50 transition-colors py-3 px-2 rounded-lg"
+                  className="text-sm font-semibold text-white hover:text-green-400 hover:bg-white/5 transition-colors py-3 px-2 rounded-lg"
                   onClick={closeMobile}
                 >
                   {entry.label}
