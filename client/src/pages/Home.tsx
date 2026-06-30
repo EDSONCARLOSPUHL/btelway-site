@@ -72,9 +72,8 @@ export default function Home() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl leading-relaxed">
-                Pare de enviar informações confidenciais da sua empresa para servidores de
-                terceiros. Tenha o poder da inteligência artificial rodando dentro da sua própria
-                infraestrutura — com custo fixo e conformidade total com a LGPD.
+                IA de ponta rodando dentro da sua empresa. Seus dados não saem, o custo é fixo e
+                tudo em conformidade com a LGPD.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -114,9 +113,8 @@ export default function Home() {
                 <span className="text-green-400">E você nem percebe.</span>
               </h2>
               <p className="text-white/70 text-lg leading-relaxed">
-                Toda vez que sua equipe usa uma IA pública, documentos, contratos e dados de
-                clientes são enviados para servidores que você não controla. Isso não é só um risco
-                técnico — é um risco jurídico e financeiro.
+                Cada vez que sua equipe usa uma IA pública, contratos e dados de clientes vão para
+                servidores que você não controla. Risco técnico, jurídico e financeiro.
               </p>
             </div>
 
@@ -125,22 +123,22 @@ export default function Home() {
                 {
                   icon: Cloud,
                   title: "Dados em servidores alheios",
-                  desc: "Informações sensíveis trafegam por nuvens estrangeiras, fora do seu controle e da LGPD.",
+                  desc: "Informações sensíveis em nuvens estrangeiras, fora do seu controle.",
                 },
                 {
                   icon: TrendingUp,
                   title: "Custo que só cresce",
-                  desc: "Cobrança por token transforma seu orçamento de IA numa conta imprevisível todo mês.",
+                  desc: "Cobrança por token vira uma conta imprevisível todo mês.",
                 },
                 {
                   icon: Lock,
                   title: "Dependência total",
-                  desc: "Mudou o preço, a política ou o modelo? Você fica refém das decisões da Big Tech.",
+                  desc: "Mudou preço ou política? Você fica refém da Big Tech.",
                 },
                 {
                   icon: AlertTriangle,
                   title: "Exposição jurídica",
-                  desc: "Vazamento de dado sensível pode gerar multa de até 2% do faturamento sob a LGPD.",
+                  desc: "Vazamento pode gerar multa de até 2% do faturamento (LGPD).",
                 },
               ].map((item) => {
                 const Icon = item.icon;
@@ -204,9 +202,8 @@ export default function Home() {
                   Existe um jeito de ter IA de ponta sem entregar seus dados.
                 </h2>
                 <p className="text-foreground/70 text-lg leading-relaxed mb-6">
-                  A IA BTELWAY instala uma infraestrutura de inteligência artificial dentro da sua
-                  empresa. Os modelos rodam localmente, os dados nunca saem do seu ambiente, e você
-                  paga um valor fixo — sem cobrança por uso.
+                  Instalamos uma infraestrutura de IA dentro da sua empresa. Modelos rodam local,
+                  dados não saem do seu ambiente e você paga valor fixo — sem cobrança por uso.
                 </p>
                 <ul className="space-y-4">
                   {[
@@ -237,19 +234,19 @@ export default function Home() {
                     icon: Lock,
                     color: "green",
                     title: "Privacidade Total",
-                    desc: "Seus dados sensíveis nunca saem da sua infraestrutura. Conformidade LGPD garantida.",
+                    desc: "Dados sensíveis nunca saem da sua infraestrutura. LGPD garantida.",
                   },
                   {
                     icon: Zap,
                     color: "cyan",
                     title: "Controle Completo",
-                    desc: "Você gerencia sua infraestrutura. Nenhuma dependência de terceiros ou vendor lock-in.",
+                    desc: "Sua infraestrutura, suas regras. Sem dependência de terceiros.",
                   },
                   {
                     icon: TrendingUp,
                     color: "emerald",
                     title: "Custos Previsíveis",
-                    desc: "Preço fixo mensal. Sem taxas por token, sem surpresas, sem escaladas inesperadas.",
+                    desc: "Preço fixo mensal. Sem taxas por token, sem surpresas.",
                   },
                 ].map((pillar) => {
                   const Icon = pillar.icon;
@@ -284,7 +281,7 @@ export default function Home() {
                 IA privada implantada em 3 etapas
               </h2>
               <p className="text-foreground/65 mt-4 text-lg">
-                Um processo claro, sem complexidade técnica do seu lado.
+                Processo claro, sem complexidade técnica do seu lado.
               </p>
             </div>
 
@@ -294,21 +291,21 @@ export default function Home() {
                   num: "01",
                   phase: "Diagnóstico",
                   title: "Avaliação",
-                  desc: "Entendemos sua infraestrutura, seus dados e os casos de uso prioritários da sua operação.",
+                  desc: "Mapeamos sua infraestrutura, dados e casos de uso prioritários.",
                   icon: Shield,
                 },
                 {
                   num: "02",
                   phase: "Implantação",
                   title: "Implementação",
-                  desc: "Instalamos e configuramos a infraestrutura de IA privada, integrada aos seus sistemas.",
+                  desc: "Instalamos a IA privada, integrada aos seus sistemas.",
                   icon: Database,
                 },
                 {
                   num: "03",
                   phase: "Operação",
                   title: "Suporte Gerenciado",
-                  desc: "Gerenciamento contínuo, monitoramento e otimização da sua plataforma de IA.",
+                  desc: "Monitoramento, suporte e otimização contínua.",
                   icon: Network,
                 },
               ].map((step) => {
@@ -413,8 +410,7 @@ export default function Home() {
                 Feito para setores onde dado é ativo crítico
               </h2>
               <p className="text-foreground/65 mt-4 text-lg">
-                Soluções adaptadas para diferentes segmentos, sempre com privacidade em primeiro
-                lugar.
+Privacidade em primeiro lugar, em cada segmento.
               </p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
@@ -452,8 +448,8 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-foreground/70 text-lg mb-8 leading-relaxed">
-                Somos para empresas que levam a segurança da informação a sério e enxergam a IA como
-                vantagem competitiva — não como brinquedo.
+                Somos para quem leva a segurança da informação a sério e vê IA como vantagem
+                competitiva — não como brinquedo.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
@@ -486,8 +482,8 @@ export default function Home() {
                   Pronto para trazer sua IA para casa?
                 </h2>
                 <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
-                  Agende uma conversa de 15 minutos, sem compromisso, e receba um diagnóstico de como
-                  a IA privada pode ser implantada na sua empresa.
+                  15 minutos, sem compromisso. Receba um diagnóstico de como implantar IA privada na
+                  sua empresa.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contato">

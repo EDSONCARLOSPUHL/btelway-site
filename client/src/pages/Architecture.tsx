@@ -33,7 +33,7 @@ export default function Architecture() {
                 className="w-full rounded-lg"
               />
               <p className="text-foreground/70 text-sm mt-6 text-center">
-                O servidor de orquestração gerencia as requisições. Os nós de inferência com GPU processam os modelos de IA localmente. Um roteador inteligente decide, a cada pergunta, se a resposta é gerada de forma privada (local) ou escalada para APIs externas quando não há dados sensíveis envolvidos.
+                A orquestração gerencia as requisições e os nós com GPU processam a IA localmente. Um roteador inteligente decide, a cada pergunta, entre resposta privada (local) ou escalada externa quando não há dados sensíveis.
               </p>
             </Card>
           </div>
@@ -215,7 +215,7 @@ export default function Architecture() {
                   {
                     step: "4",
                     title: "Escalação Opcional",
-                    desc: "Se complexa E não sensível → pode escalar para uma API externa premium, sem expor dados confidenciais",
+                    desc: "Se complexa e não sensível → pode escalar para API externa, sem expor dados",
                   },
                   {
                     step: "5",

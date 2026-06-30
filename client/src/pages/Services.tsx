@@ -117,8 +117,7 @@ export default function Services() {
               Serviços e Investimento
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              Três níveis de solução — da segurança de rede à IA privada completa — com modelo de
-              custo fixo e previsível. Escolha o que faz sentido para sua empresa.
+              Três níveis — da segurança de rede à IA privada completa. Custo fixo e previsível.
             </p>
           </div>
         </section>
@@ -128,8 +127,7 @@ export default function Services() {
           <div className="container">
             <h2 className="text-3xl font-bold mb-4 text-foreground">O que entregamos</h2>
             <p className="text-foreground/60 mb-12 max-w-2xl">
-              Cada serviço é gerenciado de ponta a ponta pela nossa equipe — você foca no negócio,
-              nós cuidamos da infraestrutura.
+              Tudo gerenciado de ponta a ponta. Você foca no negócio, nós na infraestrutura.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((service) => {
@@ -229,8 +227,8 @@ export default function Services() {
                 Investimento sob medida
               </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-                Cada empresa tem uma realidade. Por isso o valor é definido após um diagnóstico
-                gratuito da sua infraestrutura — sem taxas ocultas e com custo mensal previsível.
+                O valor é definido após um diagnóstico gratuito. Sem taxas ocultas, custo mensal
+                previsível.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 items-stretch">
@@ -290,8 +288,8 @@ export default function Services() {
               <Card className="p-6 border border-border">
                 <h3 className="font-bold text-foreground mb-2">Como é definido o valor?</h3>
                 <p className="text-foreground/70 text-sm">
-                  Fazemos um diagnóstico gratuito da sua infraestrutura e necessidades. A partir
-                  disso, montamos uma proposta com custo mensal fixo, sem cobrança por uso.
+                  Após um diagnóstico gratuito, montamos uma proposta com custo mensal fixo, sem
+                  cobrança por uso.
                 </p>
               </Card>
               <Card className="p-6 border border-border">
@@ -299,15 +297,13 @@ export default function Services() {
                   Meus dados saem da minha empresa?
                 </h3>
                 <p className="text-foreground/70 text-sm">
-                  Não. Na IA Privada, os modelos rodam localmente na infraestrutura dedicada. Dados
-                  sensíveis nunca são enviados para servidores de terceiros.
+                  Não. Os modelos rodam localmente. Dados sensíveis nunca vão para terceiros.
                 </p>
               </Card>
               <Card className="p-6 border border-border">
                 <h3 className="font-bold text-foreground mb-2">Posso começar só com a rede?</h3>
                 <p className="text-foreground/70 text-sm">
-                  Sim. Você pode iniciar pela Rede Gerenciada e evoluir para a IA Privada ou o Combo
-                  quando fizer sentido para o seu negócio.
+                  Sim. Comece pela Rede Gerenciada e evolua para IA Privada ou Combo quando quiser.
                 </p>
               </Card>
             </div>
@@ -321,8 +317,7 @@ export default function Services() {
               Qual é a melhor solução para você?
             </h2>
             <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-              Fale com nosso time. Vamos entender sua infraestrutura e recomendar o caminho ideal —
-              com diagnóstico gratuito.
+              Fale com nosso time e receba o caminho ideal — com diagnóstico gratuito.
             </p>
             <Link href="/contato">
               <Button

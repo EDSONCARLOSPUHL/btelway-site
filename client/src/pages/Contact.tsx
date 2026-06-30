@@ -96,7 +96,7 @@ export default function Contact() {
               Vamos Conversar
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              Entre em contato para conhecer como a IA Privada pode transformar seu negócio.
+              Fale com a gente e descubra como a IA privada transforma seu negócio.
             </p>
           </div>
         </section>

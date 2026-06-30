@@ -26,22 +26,22 @@ export default function About() {
     {
       icon: Lock,
       title: "Privacidade em primeiro lugar",
-      desc: "Acreditamos que os dados da sua empresa pertencem a você. Toda a nossa arquitetura é desenhada para que informações sensíveis nunca saiam da sua infraestrutura.",
+      desc: "Os dados da sua empresa pertencem a você. Nossa arquitetura garante que eles nunca saiam da sua infraestrutura.",
     },
     {
       icon: ShieldCheck,
       title: "Segurança sem terceirização",
-      desc: "Atendemos empresas que não podem — ou não querem — entregar a segurança da informação para Big Techs. Soberania de dados é a base do que fazemos.",
+      desc: "Atendemos quem não pode entregar a segurança da informação às Big Techs. Soberania de dados é a nossa base.",
     },
     {
       icon: Server,
       title: "Infraestrutura própria",
-      desc: "Não revendemos nuvem de terceiros. Construímos e gerenciamos infraestrutura dedicada, com custo fixo e previsível, sem cobrança por uso.",
+      desc: "Não revendemos nuvem. Infraestrutura dedicada, com custo fixo e previsível.",
     },
     {
       icon: Handshake,
       title: "Parceria de longo prazo",
-      desc: "Não somos um fornecedor distante. Atuamos lado a lado com sua equipe, do diagnóstico à operação contínua.",
+      desc: "Atuamos lado a lado com sua equipe, do diagnóstico à operação contínua.",
     },
   ];
 
@@ -49,17 +49,17 @@ export default function About() {
     {
       step: "01",
       title: "Diagnóstico",
-      desc: "Entendemos sua infraestrutura, seus dados e os casos de uso prioritários da operação.",
+      desc: "Mapeamos sua infraestrutura, dados e casos de uso prioritários.",
     },
     {
       step: "02",
       title: "Implantação",
-      desc: "Instalamos e configuramos a infraestrutura de rede e IA privada, integrada aos seus sistemas.",
+      desc: "Instalamos a rede e a IA privada, integradas aos seus sistemas.",
     },
     {
       step: "03",
       title: "Operação Gerenciada",
-      desc: "Monitoramento, suporte e otimização contínua — você foca no negócio, nós cuidamos da tecnologia.",
+      desc: "Monitoramento e suporte contínuos — você foca no negócio.",
     },
   ];
 
@@ -79,9 +79,8 @@ export default function About() {
               <span className="text-green-400">soberania dos seus dados</span>.
             </h1>
             <p className="text-xl text-white/80 max-w-2xl">
-              A IA BTELWAY nasceu para resolver um problema cada vez mais crítico: como usar o poder
-              da inteligência artificial sem entregar informações confidenciais para servidores de
-              terceiros.
+              Nascemos para resolver um problema crítico: usar o poder da IA sem entregar dados
+              confidenciais a servidores de terceiros.
             </p>
           </div>
         </section>
@@ -97,14 +96,12 @@ export default function About() {
                 Trazer a IA de ponta para dentro da sua empresa.
               </h2>
               <p className="text-foreground/70 mb-4 leading-relaxed">
-                Vivemos uma corrida pela inteligência artificial. Mas a maioria das soluções exige
-                que você envie documentos, contratos e dados de clientes para a nuvem de grandes
-                provedores — criando riscos jurídicos, financeiros e de imagem.
+                A maioria das soluções de IA exige enviar documentos e dados de clientes para a
+                nuvem de terceiros — criando riscos jurídicos, financeiros e de imagem.
               </p>
               <p className="text-foreground/70 leading-relaxed">
-                Nós fazemos o caminho contrário: implantamos infraestrutura de IA privada,
-                gerenciada e em conformidade com a LGPD, para que sua empresa tenha autonomia
-                tecnológica de verdade — sem depender de Big Techs e sem custos imprevisíveis.
+                Fazemos o contrário: IA privada, gerenciada e em conformidade com a LGPD. Autonomia
+                tecnológica de verdade, sem depender de Big Techs e sem custos imprevisíveis.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -149,9 +146,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Missão</h3>
               <p className="text-foreground/70 leading-relaxed">
-                Democratizar o acesso à inteligência artificial de alto desempenho de forma privada,
-                segura e economicamente viável, para que empresas de qualquer porte mantenham o
-                controle total sobre seus dados.
+Levar IA de alto desempenho de forma privada, segura e viável a empresas de qualquer porte — com controle total sobre os dados.
               </p>
             </Card>
             <Card className="p-8 border border-border">
@@ -160,9 +155,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Visão</h3>
               <p className="text-foreground/70 leading-relaxed">
-                Ser a referência em infraestrutura de IA privada no Brasil, provando que é possível
-                inovar com inteligência artificial sem abrir mão da privacidade e da soberania
-                tecnológica.
+Ser referência em IA privada no Brasil, provando que dá para inovar sem abrir mão da privacidade e da soberania.
               </p>
             </Card>
           </div>
@@ -234,8 +227,7 @@ export default function About() {
                 </h2>
               </div>
               <p className="text-foreground/70 mb-6 max-w-3xl">
-                Somos a escolha de empresas que levam a segurança da informação a sério e enxergam a
-                IA como vantagem competitiva — não como brinquedo.
+Para quem leva a segurança da informação a sério e vê IA como vantagem competitiva.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
@@ -261,8 +253,7 @@ export default function About() {
               Vamos trazer a sua IA para casa?
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Agende uma conversa de 15 minutos, sem compromisso, e descubra como implantar IA
-              privada na sua empresa.
+15 minutos, sem compromisso. Descubra como implantar IA privada na sua empresa.
             </p>
             <Link href="/contato">
               <Button

@@ -70,7 +70,7 @@ export default function Roadmap() {
               Roadmap de Implantação
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              Três fases de evolução: do núcleo de IA até escala e robustez. Crescimento puxado pela demanda, não pelo capital.
+              Três fases: do núcleo de IA à escala. Crescimento puxado pela demanda, não pelo capital.
             </p>
           </div>
         </section>
@@ -159,7 +159,7 @@ export default function Roadmap() {
             </h2>
             <Card className="p-8 border border-accent/30 bg-accent/10">
               <p className="text-lg text-foreground leading-relaxed">
-                A infraestrutura cresce <strong>puxada pela demanda</strong> (cliente pagante), não pela disponibilidade de capital. As máquinas extras ficam de prontidão; o hardware de IA é adquirido quando um contrato justifica. <strong>Não enterramos capital antes da receita.</strong>
+                A infraestrutura cresce <strong>puxada pela demanda</strong>, não pelo capital. O hardware de IA é adquirido quando um contrato justifica. <strong>Não enterramos capital antes da receita.</strong>
               </p>
             </Card>
           </div>
@@ -175,35 +175,35 @@ export default function Roadmap() {
               {[
                 {
                   title: "Raciocínio e Análise",
-                  desc: "Modelos especializados em problemas complexos, lógica e análise profunda",
+                  desc: "Problemas complexos, lógica e análise profunda.",
                 },
                 {
                   title: "Conversá Geral (PT-BR)",
-                  desc: "Suporte em português, conversas naturais, atendimento ao cliente",
+                  desc: "Português nativo, conversas naturais, atendimento.",
                 },
                 {
                   title: "Programação e Desenvolvimento",
-                  desc: "Código, debugging, arquitetura de software, revisão de código",
+                  desc: "Código, debugging e revisão de software.",
                 },
                 {
                   title: "Visão e Imagens",
-                  desc: "Análise de imagens, OCR, extração de texto, geração de imagens",
+                  desc: "Análise de imagens, OCR e geração visual.",
                 },
                 {
                   title: "Respostas Rápidas",
-                  desc: "Classificação, tagging, respostas instantâneas com baixa latência",
+                  desc: "Classificação e respostas instantâneas de baixa latência.",
                 },
                 {
                   title: "Busca e Contexto (RAG)",
-                  desc: "Indexação de documentos, busca semântica, enriquecimento de contexto",
+                  desc: "Indexação de documentos e busca semântica.",
                 },
                 {
                   title: "Audio e Transcrição",
-                  desc: "Transcrição de áudio, reconhecimento de fala, processamento de mídia",
+                  desc: "Transcrição de áudio e reconhecimento de fala.",
                 },
                 {
                   title: "Automação e Workflows",
-                  desc: "Fluxos de trabalho inteligentes, integrações, orquestração de tarefas",
+                  desc: "Fluxos inteligentes, integrações e orquestração.",
                 },
               ].map((item, idx) => (
                 <Card key={idx} className="p-6 border border-border">
