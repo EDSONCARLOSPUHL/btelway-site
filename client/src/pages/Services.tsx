@@ -317,7 +317,7 @@ export default function Services() {
               Qual é a melhor solução para você?
             </h2>
             <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-              Fale com nosso time e receba o caminho ideal — com diagnóstico gratuito.
+              Fale com a gente e receba um diagnóstico gratuito.
             </p>
             <Link href="/contato">
               <Button

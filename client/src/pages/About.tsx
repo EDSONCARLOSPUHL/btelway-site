@@ -80,7 +80,7 @@ export default function About() {
             </h1>
             <p className="text-xl text-white/80 max-w-2xl">
               Nascemos para resolver um problema crítico: usar o poder da IA sem entregar dados
-              confidenciais a servidores de terceiros.
+              confidenciais a terceiros.
             </p>
           </div>
         </section>
@@ -97,11 +97,11 @@ export default function About() {
               </h2>
               <p className="text-foreground/70 mb-4 leading-relaxed">
                 A maioria das soluções de IA exige enviar documentos e dados de clientes para a
-                nuvem de terceiros — criando riscos jurídicos, financeiros e de imagem.
+                nuvem — um risco jurídico, financeiro e de imagem.
               </p>
               <p className="text-foreground/70 leading-relaxed">
-                Fazemos o contrário: IA privada, gerenciada e em conformidade com a LGPD. Autonomia
-                tecnológica de verdade, sem depender de Big Techs e sem custos imprevisíveis.
+                Fazemos o contrário: IA privada, gerenciada e 100% LGPD. Autonomia de verdade — sem
+                depender de Big Techs e sem custos imprevisíveis.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -146,7 +146,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Missão</h3>
               <p className="text-foreground/70 leading-relaxed">
-Levar IA de alto desempenho de forma privada, segura e viável a empresas de qualquer porte — com controle total sobre os dados.
+Levar IA de alto desempenho, privada e segura, a empresas de qualquer porte — com controle total dos dados.
               </p>
             </Card>
             <Card className="p-8 border border-border">
@@ -155,7 +155,7 @@ Levar IA de alto desempenho de forma privada, segura e viável a empresas de qua
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Visão</h3>
               <p className="text-foreground/70 leading-relaxed">
-Ser referência em IA privada no Brasil, provando que dá para inovar sem abrir mão da privacidade e da soberania.
+Ser referência em IA privada no Brasil. Provar que dá para inovar sem abrir mão da privacidade.
               </p>
             </Card>
           </div>

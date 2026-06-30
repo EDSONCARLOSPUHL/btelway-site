@@ -64,7 +64,7 @@ export default function UseCases() {
               Casos de Uso por Indústria
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              Veja como empresas em diferentes setores estão transformando suas operações com IA Privada.
+              Veja como diferentes setores transformam suas operações com IA privada.
             </p>
           </div>
         </section>

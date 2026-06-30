@@ -24,7 +24,7 @@ export default function Security() {
               Segurança & Conformidade
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              Infraestrutura de segurança de nível empresarial com todas as certificações necessárias.
+              Segurança de nível empresarial, com as certificações que sua empresa precisa.
             </p>
           </div>
         </section>

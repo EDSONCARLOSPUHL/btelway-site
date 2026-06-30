@@ -159,7 +159,7 @@ export default function Roadmap() {
             </h2>
             <Card className="p-8 border border-accent/30 bg-accent/10">
               <p className="text-lg text-foreground leading-relaxed">
-                A infraestrutura cresce <strong>puxada pela demanda</strong>, não pelo capital. O hardware de IA é adquirido quando um contrato justifica. <strong>Não enterramos capital antes da receita.</strong>
+                A infraestrutura cresce <strong>puxada pela demanda</strong>, não pelo capital. Compramos hardware quando um contrato justifica. <strong>Sem enterrar capital antes da receita.</strong>
               </p>
             </Card>
           </div>

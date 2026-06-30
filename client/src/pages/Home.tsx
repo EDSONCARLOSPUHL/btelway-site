@@ -72,8 +72,8 @@ export default function Home() {
               </h1>
 
               <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl leading-relaxed">
-                IA de ponta rodando dentro da sua empresa. Seus dados não saem, o custo é fixo e
-                tudo em conformidade com a LGPD.
+                Sua empresa não precisa entregar dados sensíveis a servidores de terceiros. Rode IA
+                de ponta na sua própria infraestrutura — custo fixo e 100% LGPD.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -113,8 +113,8 @@ export default function Home() {
                 <span className="text-green-400">E você nem percebe.</span>
               </h2>
               <p className="text-white/70 text-lg leading-relaxed">
-                Cada vez que sua equipe usa uma IA pública, contratos e dados de clientes vão para
-                servidores que você não controla. Risco técnico, jurídico e financeiro.
+                Toda vez que a equipe usa IA pública, contratos e dados de clientes saem para fora.
+                Risco técnico, jurídico e financeiro.
               </p>
             </div>
 
@@ -202,8 +202,8 @@ export default function Home() {
                   Existe um jeito de ter IA de ponta sem entregar seus dados.
                 </h2>
                 <p className="text-foreground/70 text-lg leading-relaxed mb-6">
-                  Instalamos uma infraestrutura de IA dentro da sua empresa. Modelos rodam local,
-                  dados não saem do seu ambiente e você paga valor fixo — sem cobrança por uso.
+                  Instalamos uma IA privada dentro da sua empresa. Os modelos rodam local, os dados
+                  ficam no seu ambiente e você paga valor fixo — sem cobrança por uso.
                 </p>
                 <ul className="space-y-4">
                   {[
@@ -281,7 +281,7 @@ export default function Home() {
                 IA privada implantada em 3 etapas
               </h2>
               <p className="text-foreground/65 mt-4 text-lg">
-                Processo claro, sem complexidade técnica do seu lado.
+                Processo claro. A parte técnica fica com a gente.
               </p>
             </div>
 
@@ -291,7 +291,7 @@ export default function Home() {
                   num: "01",
                   phase: "Diagnóstico",
                   title: "Avaliação",
-                  desc: "Mapeamos sua infraestrutura, dados e casos de uso prioritários.",
+                  desc: "Mapeamos sua infraestrutura, seus dados e os casos de uso prioritários.",
                   icon: Shield,
                 },
                 {
@@ -410,7 +410,7 @@ export default function Home() {
                 Feito para setores onde dado é ativo crítico
               </h2>
               <p className="text-foreground/65 mt-4 text-lg">
-Privacidade em primeiro lugar, em cada segmento.
+                Privacidade em primeiro lugar, em todo segmento.
               </p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
@@ -448,7 +448,7 @@ Privacidade em primeiro lugar, em cada segmento.
                 </h2>
               </div>
               <p className="text-foreground/70 text-lg mb-8 leading-relaxed">
-                Somos para quem leva a segurança da informação a sério e vê IA como vantagem
+                Trabalhamos com quem leva segurança da informação a sério e vê IA como vantagem
                 competitiva — não como brinquedo.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
@@ -505,7 +505,7 @@ Privacidade em primeiro lugar, em cada segmento.
                   </a>
                 </div>
                 <p className="text-white/50 text-sm mt-6">
-                  Sem pressão, sem truques. Apenas uma conversa estratégica.
+                  Sem pressão, sem truques. Só uma conversa estratégica.
                 </p>
               </div>
             </div>

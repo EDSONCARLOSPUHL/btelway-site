@@ -15,7 +15,7 @@ export default function Architecture() {
               Arquitetura Técnica
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              Infraestrutura robusta, segura e escalável. Dados privados, processamento local, sem dependências externas.
+              Infraestrutura robusta, segura e escalável. Dados privados e processamento local — sem dependências externas.
             </p>
           </div>
         </section>
