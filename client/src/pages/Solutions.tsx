@@ -20,7 +20,7 @@ export default function Solutions() {
         "Zero dependência de APIs externas",
         "Análise de documentos confidenciais"
       ],
-      color: "from-green-500 to-green-600"
+      color: "from-green-500 to-emerald-600"
     },
     {
       icon: Shield,
@@ -32,7 +32,7 @@ export default function Solutions() {
         "Monitoramento contínuo",
         "Suporte técnico 24/7"
       ],
-      color: "from-green-500 to-green-600"
+      color: "from-cyan-500 to-cyan-600"
     },
     {
       icon: Zap,
@@ -44,7 +44,7 @@ export default function Solutions() {
         "Aprendizado contínuo",
         "ROI comprovado em 6 meses"
       ],
-      color: "from-green-500 to-green-500"
+      color: "from-green-500 to-cyan-500"
     }
   ];
 

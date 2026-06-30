@@ -42,7 +42,7 @@ export default function Roadmap() {
         "Modelos de IA maiores rodando localmente",
       ],
       timeline: "Agosto - Setembro 2026",
-      color: "from-green-500 to-green-600",
+      color: "from-cyan-500 to-cyan-600",
     },
     {
       phase: 3,

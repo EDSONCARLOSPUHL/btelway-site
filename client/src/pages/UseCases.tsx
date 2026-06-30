@@ -79,11 +79,12 @@ export default function UseCases() {
             <div className="grid md:grid-cols-2 gap-8">
               {cases.map((useCase, idx) => {
                 const Icon = useCase.icon;
+                const isCyan = idx % 2 === 1;
                 return (
-                  <Card key={idx} className="p-8 border border-border hover:border-accent/50 transition-all">
+                  <Card key={idx} className={`p-8 border border-border transition-all ${isCyan ? "hover:border-cyan-500/50" : "hover:border-green-500/50"}`}>
                     <div className="flex items-start gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-accent" />
+                      <div className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${isCyan ? "bg-cyan-500/15" : "bg-green-500/15"}`}>
+                        <Icon className={`w-6 h-6 ${isCyan ? "text-cyan-400" : "text-green-400"}`} />
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-foreground">{useCase.title}</h3>
@@ -93,7 +94,7 @@ export default function UseCases() {
                     <ul className="space-y-3">
                       {useCase.benefits.map((benefit, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                          <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${isCyan ? "bg-cyan-400" : "bg-green-400"}`} />
                           <span className="text-foreground/80 text-sm">{benefit}</span>
                         </li>
                       ))}

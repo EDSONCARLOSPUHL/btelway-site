@@ -40,10 +40,11 @@ export default function Security() {
             <div className="grid md:grid-cols-4 gap-6">
               {certifications.map((cert, idx) => {
                 const Icon = cert.icon;
+                const isCyan = idx % 2 === 1;
                 return (
-                  <Card key={idx} className="p-6 text-center border border-border hover:border-accent/50 transition-all">
+                  <Card key={idx} className={`p-6 text-center border border-border transition-all ${isCyan ? "hover:border-cyan-500/50" : "hover:border-green-500/50"}`}>
                     <div className="flex justify-center mb-4">
-                      <Icon className="w-8 h-8 text-accent" />
+                      <Icon className={`w-8 h-8 ${isCyan ? "text-cyan-400" : "text-green-400"}`} />
                     </div>
                     <h3 className="font-bold text-foreground mb-2">{cert.title}</h3>
                     <p className="text-sm text-foreground/80">{cert.description}</p>

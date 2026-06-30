@@ -265,12 +265,19 @@
   animation: hero-scan 6s linear infinite;
 }
 
+.hero-scanline-cyan {
+  top: 0;
+  animation: hero-scan 6s linear infinite;
+  animation-delay: 3s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in,
   .animate-fade-in-up,
   .animate-slide-in-left,
   .animate-pulse-soft,
-  .hero-scanline {
+  .hero-scanline,
+  .hero-scanline-cyan {
     animation: none;
   }
 }

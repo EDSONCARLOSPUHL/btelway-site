@@ -192,15 +192,16 @@ export default function Home() {
                   title: "Exposição jurídica",
                   desc: "Vazamento pode gerar multa de até 2% do faturamento (LGPD).",
                 },
-              ].map((item) => {
+              ].map((item, idx) => {
                 const Icon = item.icon;
+                const isCyan = idx % 2 === 1;
                 return (
                   <div
                     key={item.title}
-                    className="p-6 rounded-2xl bg-white/[0.06] border border-white/10 hover:border-green-400/30 hover:bg-white/[0.1] transition-all"
+                    className={`p-6 rounded-2xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.1] transition-all ${isCyan ? "hover:border-cyan-400/30" : "hover:border-green-400/30"}`}
                   >
-                    <div className="w-12 h-12 rounded-xl bg-green-500/10 border border-green-400/20 flex items-center justify-center mb-5">
-                      <Icon className="w-6 h-6 text-green-500" />
+                    <div className={`w-12 h-12 rounded-xl border flex items-center justify-center mb-5 ${isCyan ? "bg-cyan-500/10 border-cyan-400/20" : "bg-green-500/10 border-green-400/20"}`}>
+                      <Icon className={`w-6 h-6 ${isCyan ? "text-cyan-400" : "text-green-500"}`} />
                     </div>
                     <h3 className="font-bold text-lg mb-2">{item.title}</h3>
                     <p className="text-white/80 text-sm leading-relaxed">{item.desc}</p>
@@ -360,18 +361,19 @@ export default function Home() {
                   desc: "Monitoramento, suporte e otimização contínua.",
                   icon: Network,
                 },
-              ].map((step) => {
+              ].map((step, idx) => {
                 const Icon = step.icon;
+                const isCyan = idx === 1;
                 return (
                   <div key={step.num} className="relative">
-                    <Card className="p-8 h-full border border-border hover:border-green-400/40 hover:shadow-xl hover:shadow-green-500/10 transition-all">
+                    <Card className={`p-8 h-full border border-border hover:shadow-xl transition-all ${isCyan ? "hover:border-cyan-400/40 hover:shadow-cyan-500/10" : "hover:border-green-400/40 hover:shadow-green-500/10"}`}>
                       <div className="flex items-center justify-between mb-6">
-                        <span className="text-5xl font-bold text-green-500/15">{step.num}</span>
-                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg shadow-green-500/20">
+                        <span className={`text-5xl font-bold ${isCyan ? "text-cyan-500/15" : "text-green-500/15"}`}>{step.num}</span>
+                        <div className={`w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center shadow-lg ${isCyan ? "from-cyan-500 to-cyan-600 shadow-cyan-500/20" : "from-green-500 to-green-600 shadow-green-500/20"}`}>
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                       </div>
-                      <span className="text-green-500 text-xs font-semibold tracking-wide uppercase">
+                      <span className={`text-xs font-semibold tracking-wide uppercase ${isCyan ? "text-cyan-400" : "text-green-500"}`}>
                         {step.phase}
                       </span>
                       <h3 className="text-xl font-bold text-foreground mt-1 mb-3">{step.title}</h3>
@@ -471,15 +473,16 @@ export default function Home() {
                 { name: "Saúde", icon: Stethoscope },
                 { name: "E-commerce", icon: ShoppingCart },
                 { name: "Indústria", icon: Factory },
-              ].map((ind) => {
+              ].map((ind, idx) => {
                 const Icon = ind.icon;
+                const isCyan = idx % 2 === 1;
                 return (
                   <Card
                     key={ind.name}
-                    className="p-8 border border-border hover:border-green-400/50 transition-all text-center hover:shadow-lg hover:shadow-green-500/10 group"
+                    className={`p-8 border border-border transition-all text-center hover:shadow-lg group ${isCyan ? "hover:border-cyan-400/50 hover:shadow-cyan-500/10" : "hover:border-green-400/50 hover:shadow-green-500/10"}`}
                   >
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500/10 to-green-600/10 border border-green-400/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
-                      <Icon className="w-7 h-7 text-green-500" />
+                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br border flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform ${isCyan ? "from-cyan-500/10 to-cyan-600/10 border-cyan-400/20" : "from-green-500/10 to-green-600/10 border-green-400/20"}`}>
+                      <Icon className={`w-7 h-7 ${isCyan ? "text-cyan-400" : "text-green-500"}`} />
                     </div>
                     <p className="font-bold text-foreground">{ind.name}</p>
                   </Card>

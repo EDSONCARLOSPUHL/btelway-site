@@ -27,7 +27,7 @@ export default function Services() {
         "Suporte técnico especializado",
         "Relatórios de segurança mensais",
       ],
-      color: "from-green-500 to-green-600",
+      color: "from-cyan-500 to-cyan-600",
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ export default function Services() {
         "Interface web privada (acesso por VPN)",
         "Conformidade LGPD garantida",
       ],
-      color: "from-green-500 to-green-600",
+      color: "from-green-500 to-emerald-600",
     },
     {
       id: 3,
@@ -55,7 +55,7 @@ export default function Services() {
         "Backup automático de dados e configurações",
         "Escalabilidade conforme sua demanda cresce",
       ],
-      color: "from-green-500 to-green-500",
+      color: "from-green-500 to-cyan-500",
     },
   ];
 

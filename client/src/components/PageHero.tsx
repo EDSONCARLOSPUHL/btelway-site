@@ -1,8 +1,9 @@
 /**
  * PageHero — cabeçalho tecnológico das páginas internas (IA BTELWAY).
- * Transmite "alta tecnologia" de forma consistente: grade técnica em perspectiva,
- * brilhos radiais verdes (cor da marca), linha de varredura (scanline) e badge opcional.
- * Tema escuro contínuo; texto branco com contraste forte. Verde único = green-500 (#22c55e).
+ * Transmite "alta tecnologia": grade técnica em perspectiva, brilhos radiais
+ * em DUAS cores (verde da marca + ciano/azul de apoio), linhas de varredura e badge.
+ * Tema escuro contínuo; texto branco com contraste forte.
+ * Paleta: verde = green-500 (#22c55e) protagonista, ciano = cyan-400 (#22d3ee) de apoio.
  */
 import { ReactNode } from "react";
 
@@ -20,12 +21,12 @@ export default function PageHero({ eyebrow, title, subtitle, children }: PageHer
       {/* Camada de profundidade: degradê escuro -> base */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0b2417]/90 via-[#0c2014]/60 to-transparent" />
 
-      {/* Grade técnica em perspectiva (piso de datacenter) */}
+      {/* Grade técnica em perspectiva (piso de datacenter) — verde + ciano */}
       <div
-        className="absolute inset-x-0 bottom-0 h-2/3 opacity-[0.25]"
+        className="absolute inset-x-0 bottom-0 h-2/3 opacity-[0.28]"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(34,197,94,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(34,197,94,0.35) 1px, transparent 1px)",
+            "linear-gradient(rgba(34,197,94,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.30) 1px, transparent 1px)",
           backgroundSize: "44px 44px",
           maskImage: "linear-gradient(to top, black, transparent 85%)",
           WebkitMaskImage: "linear-gradient(to top, black, transparent 85%)",
@@ -34,7 +35,7 @@ export default function PageHero({ eyebrow, title, subtitle, children }: PageHer
         }}
       />
 
-      {/* Brilho radial verde no canto */}
+      {/* Brilho radial verde (canto direito) */}
       <div
         className="absolute -top-24 right-[-6rem] w-[34rem] h-[34rem] rounded-full blur-3xl opacity-[0.22]"
         style={{
@@ -43,9 +44,19 @@ export default function PageHero({ eyebrow, title, subtitle, children }: PageHer
         }}
       />
 
-      {/* Linha de varredura animada (scanline) */}
+      {/* Brilho radial ciano (apoio, mais ao centro/baixo) para criar o contraste azul x verde */}
+      <div
+        className="absolute top-1/3 right-1/4 w-[26rem] h-[26rem] rounded-full blur-3xl opacity-[0.16]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(34,211,238,0.55) 0%, rgba(34,211,238,0) 70%)",
+        }}
+      />
+
+      {/* Linhas de varredura animadas (scanline): uma verde, uma ciano deslocada */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="hero-scanline absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-400/60 to-transparent" />
+        <div className="hero-scanline-cyan absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/45 to-transparent" />
       </div>
 
       <div className="container relative z-10">

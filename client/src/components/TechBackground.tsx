@@ -19,10 +19,10 @@ export default function TechBackground() {
         }}
       />
       <div
-        className="absolute top-1/3 right-[-10rem] w-[36rem] h-[36rem] rounded-full opacity-[0.12] blur-3xl"
+        className="absolute top-1/3 right-[-10rem] w-[36rem] h-[36rem] rounded-full opacity-[0.13] blur-3xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(34,197,94,0.45) 0%, rgba(34,197,94,0) 70%)",
+            "radial-gradient(circle, rgba(34,211,238,0.42) 0%, rgba(34,211,238,0) 70%)",
         }}
       />
 
