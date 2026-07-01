@@ -4,7 +4,7 @@
  */
 import { Separator } from "@/components/ui/separator";
 import { Link } from "wouter";
-import { Mail, Phone, MessageCircle } from "lucide-react";
+import { Mail, Phone, MessageCircle, Instagram, Globe } from "lucide-react";
 
 const WHATSAPP_URL =
   "https://wa.me/5554933806130?text=" +
@@ -43,18 +43,18 @@ export default function Footer() {
             </p>
             <div className="space-y-2 pt-2 text-sm">
               <a
-                href="mailto:edsonpuhl@gmail.com"
+                href="mailto:contato@btelway.ia.br"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4 text-green-500" />
-                edsonpuhl@gmail.com
+                contato@btelway.ia.br
               </a>
               <a
                 href="tel:+5554933806130"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4 text-green-500" />
-                +55 (54) 9 3380-6130
+                (54) 9 3380-6130
               </a>
               <a
                 href={WHATSAPP_URL}
@@ -64,6 +64,24 @@ export default function Footer() {
               >
                 <MessageCircle className="w-4 h-4 text-green-500" />
                 Falar no WhatsApp
+              </a>
+              <a
+                href="https://www.btelway.ia.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
+              >
+                <Globe className="w-4 h-4 text-green-500" />
+                www.btelway.ia.br
+              </a>
+              <a
+                href="https://instagram.com/btelway.ia.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
+              >
+                <Instagram className="w-4 h-4 text-green-500" />
+                @btelway.ia.br
               </a>
             </div>
           </div>

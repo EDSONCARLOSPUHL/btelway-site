@@ -5,18 +5,18 @@ import Seo from "@/components/Seo";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Clock, Loader2, MessageCircle } from "lucide-react";
+import { Mail, Phone, Clock, Loader2, MessageCircle, Instagram } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
 // CONFIGURAÇÃO DE E-MAIL
 // O envio do formulário usa o Formspree (sem necessidade de servidor próprio).
 // 1. Crie uma conta gratuita em https://formspree.io
-// 2. Crie um novo formulário apontando para edsonpuhl@gmail.com
+// 2. Crie um novo formulário apontando para contato@btelway.ia.br
 // 3. Copie o ID do formulário (ex: "xyzabcd") e cole abaixo.
 // Enquanto o ID for "SEU_FORM_ID", o formulário abrirá o e-mail/WhatsApp como alternativa.
 const FORMSPREE_ID = "SEU_FORM_ID";
-const CONTACT_EMAIL = "edsonpuhl@gmail.com";
+const CONTACT_EMAIL = "contato@btelway.ia.br";
 const WHATSAPP_NUMBER = "5554933806130"; // +55 (54) 9 3380-6130
 
 export default function Contact() {
@@ -196,7 +196,19 @@ export default function Contact() {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
                         <a href="tel:+5554933806130" className="text-foreground/85 hover:text-accent transition-colors">
-                          +55 (54) 9 3380-6130
+                          (54) 9 3380-6130
+                        </a>
+                      </div>
+                    </div>
+                  </Card>
+
+                  <Card className="p-6 border border-border">
+                    <div className="flex items-start gap-4">
+                      <Instagram className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-1">Instagram</h3>
+                        <a href="https://instagram.com/btelway.ia.br" target="_blank" rel="noopener noreferrer" className="text-foreground/85 hover:text-accent transition-colors">
+                          @btelway.ia.br
                         </a>
                       </div>
                     </div>
